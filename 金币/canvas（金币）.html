@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lxx</title>
+	<script>
+		window.onload=function(){
+			var oC = document.querySelector('canvas');
+			var gd = oC.getContext('2d');
+
+			var oImg = new Image();
+			oImg.src ='coinAni2.png';
+			var x =50;
+			var y = 50;
+			var i = 0;
+			var w = 60;
+			var h = 60;
+			oImg.onload=function(){
+				setInterval(function(){
+					gd.clearRect(0,0,oC.width,oC.height);
+					i++;
+					i%=10;
+					gd.drawImage(oImg,0,h*i,w,h,x,y,w,h);
+				},100);
+			}
+		
+			var oImg1 = new Image();
+			oImg1.src ='coinAni1.png';
+			var x1 =200;
+			var y1 = 50;
+			var w1 = 60;
+			var h1 = 60;
+			oImg1.onload=function(){
+				setInterval(function(){
+					gd.clearRect(0,0,oC.width,oC.height);
+					i++;
+					i%=10;
+					gd.drawImage(oImg1,0,h1*i,w1,h1,x1,y1,w1,h1);
+				},100);
+			}
+		}
+	</script>
+</head>
+<body>
+	<canvas width="300" height="300" style="border:1px solid red;"></canvas>
+</body>
+</html>
