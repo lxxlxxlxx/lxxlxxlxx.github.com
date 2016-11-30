@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>lxx</title>
+	<style>
+		div{
+			display: none;
+		}
+		.box{
+			display: block;
+			width:200px;
+			height: 200px;
+			background: red;
+			margin:100px auto;
+			
+		}
+		.move{-webkit-animation:shake 1s linear 4;}
+		@keyFrames shake{
+			0%{
+				-webkit-transform:rotate(0deg);
+			}
+			25%{
+				-webkit-transform:rotate(10deg); 
+			}
+			50%{
+				-webkit-transform:rotate(0deg); 
+			}
+			75%{
+				-webkit-transform:rotate(-10deg); 
+			}
+			100%{
+				-webkit-transform:rotate(0deg); 
+			}
+		}
+	</style>
+<script>
+		window.onload=function(){
+			var oBox=document.querySelector('.box');
+			/*oBox.onclick=function(){
+				this.classList.add('move');
+			}
+			//运动完毕时兼容版
+			oBox.addEventListener('webkitAnimationEnd',function(){
+				oBox.classList.remove('move');
+			},false);*/
+			//判断支不支持重力感应
+			if(window.DeviceMotionEvent){
+				var lastx =0;
+				var lasty = 0;
+				var lastz = 0;
+				window.addEventListener('devicemotion',function(ev){
+					//重力加速度值
+					var ac = ev.accelerationIncludingGravity;
+					/*ac.x
+					ac.y
+					ac.z*/
+					if(Math.abs(ac.x-lastx) >20 || Math.abs(ac.y-lasty) >20 || Math.abs(ac.z-lastz) >20){
+						oBox.classList.add('move');
+					}
+					lastx = ac.x;
+					lasty = ac.y;
+					lastz = ac.z;
+				},false);
+			}
+			oBox.addEventListener('webkitAnimationEnd',function(){
+				oBox.classList.remove('move');
+			},false);
+		}
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
