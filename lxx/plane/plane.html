@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>飞机大战</title>
+    <link rel="stylesheet" type="text/css" href="css/plane.css" />
+    <script src="js/GameEngine.js"></script>
+    <script src="js/MyPlane.js"></script>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/cookie.js"></script>
+    <script>
+        window.onload = function(){
+            setCookie('plane','1',20);
+            var list = document.getElementById("list");
+            var lis = document.querySelectorAll("#list li");
+            var list1 = document.getElementById("list1");
+            var lis1 = document.querySelectorAll("#list1 li");
+            var oBack = document.getElementById('back');  
+
+            setCookie('plane','1',20);
+            oBack.onclick=function(){
+                if(setCookie.value == 1){
+                    setCookie('plane','2',20);
+                }else if(setCookie.value == 2){
+                    setCookie('plane','1',20);
+                }          
+            }
+
+            var interval = 0;
+            var ren=0;
+            for(var j=0;j<lis1.length;j++)
+            {
+                lis1[j].onclick=function(){
+                    ren=this.value;
+                    list.style.display="block";
+                    list1.style.display="none";
+                    gameEngine.ren=ren;
+                    console.log(ren);
+                }
+                for(var i=0;i<lis.length;i++){//对于游戏难度进行选择，选择完毕以后，进入游戏，移除当前的所有li
+                    lis[i].onclick = function () {
+                        interval = this.value;
+                        list.parentNode.removeChild(list);
+                        gameEngine.interval = interval;//确定子弹间隙
+                        gameEngine.start();
+                        //游戏引擎启动
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body style="background:url(images/playbackground.png)">
+    <p class="p1">ps：1p 左：← ,右：→</p>
+    <p class="p2">ps：2p a：← ,d：→</p>
+    <a href="javascript:history.go(-1)"><span id ="back"></span></a>
+<div id="body_main" class="main">
+    <div id="score">0</div>
+    <ul id="list1">
+        <li value="1">单人</li>
+        <li value="2">双人</li>
+    </ul>
+    <ul id="list">
+        <li value="1000">超级困难</li>
+        <li value="500">非常困难</li>
+        <li value="150">比较困难</li>
+    </ul>
+</div>
+</body>
+</html>

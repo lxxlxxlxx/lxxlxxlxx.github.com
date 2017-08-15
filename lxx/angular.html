@@ -1,0 +1,150 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>lxx</title>
+	<script src="js/angular.js"></script>
+	<style>
+		body{
+			background:url(img/14879234611511.png);		
+		}
+		.car{
+			width:100px;
+			height: 29px;
+			font-size: 29px;
+			/* margin:200px auto; */
+			color:#f26e3d;
+			display: block;
+			margin:55px auto;
+			font-weight: bold;
+		}
+		table{
+			border-collapse: collapse;
+			margin:0 auto;
+			color:#fff;
+			position: relative;
+		}
+		table .name{
+			font-weight: bold;
+
+		}
+		td{
+			border:1px solid #000;
+			padding:10px;
+			border-color:#fff;
+		}
+		.food1{
+			width:208px;
+			height: 202px;
+			position: absolute;
+			top:10px;
+			left:205px;
+		}
+		.food2{
+			width:241px;
+			height: 216px;
+			position: absolute;
+			top:10px;
+			left:850px;
+		}
+		.food3{
+			width:141px;
+			height: 242px;
+			position: absolute;
+			top:175px;
+			left:100px;
+		}
+		.food4{
+			width:192px;
+			height: 185px;
+			position: absolute;
+			top:404px;
+			left:230px;
+		}
+		.food5{
+			width:177px;
+			height: 196px;
+			position: absolute;
+			top:220px;
+			left:997px;
+		}
+		.food6{
+			width:183px;
+			height: 189px;
+			position: absolute;
+			top:375px;
+			left:818px;
+		}
+		.food7{
+			width:158px;
+			height: 160px;
+			position: absolute;
+			top:445px;
+			left:575px;
+		}
+		.food7 img{
+			width:144px;
+			height: 145px;
+		}
+		#back{
+		width:120px;
+		height:65px;
+		position: absolute;
+		right:75px;
+		top:520px;
+		display: block;
+		background-image: url(images/back.png);
+		background-size:100% 100%;
+	}
+		
+	</style>
+	<script>
+		var app = angular.module('app',[]);
+		app.controller('buy',function($scope){
+			$scope.arr=[
+				{name:'苹果',price:1,count:3},
+				{name:'香蕉',price:2,count:1},
+				{name:'葡萄',price:3,count:4},
+				{name:'草莓',price:4,count:6},
+				{name:'柚子',price:5,count:2}
+			];
+
+			$scope.sum=function(){
+				var res=0;
+				angular.forEach($scope.arr,function(value,key){
+					res +=value.price*value.count;
+				});
+				return res;
+			}
+		}) 
+	</script>
+</head>
+<body>
+	<div class="car">购物车</div>
+	<table ng-controller="buy">
+		<tr class="name">
+			<td>名称：</td>
+			<td>单价：</td>
+			<td>数量：</td>
+			<td>小计：</td>
+		</tr>
+		<tr ng-repeat="item in arr">
+			<td>{{item.name}}</td>
+			<td>{{item.price}}</td>
+			<td><input type="number" ng-model="item.count"></td>
+			<td>{{item.price*item.count}}</td>
+		</tr>
+		<tr>
+			<td >总额:</td>
+			<td colspan="3">{{sum()|currency:'￥'}}</td>
+		</tr>
+	</table>
+	<div class="food1"><img src="img/food4.png" alt=""></div>
+	<div class="food2"><img src="img/food2.png" alt=""></div>
+	<div class="food3"><img src="img/food3.png" alt=""></div>
+	<div class="food4"><img src="img/food7.png" alt=""></div>
+	<div class="food5"><img src="img/food6.png" alt=""></div>
+	<div class="food6"><img src="img/food1.png" alt=""></div>
+	<div class="food7"><img src="img/food8.png" alt=""></div>
+	<a href="javascript:history.go(-1)"><span id ="back"></span></a>
+</html>

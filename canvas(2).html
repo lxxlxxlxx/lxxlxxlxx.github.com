@@ -1,0 +1,103 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{padding:0;margin:0;}
+		canvas{background:#000;display:block;}
+	</style>
+	<script>
+		function rnd(n,m){
+			return parseInt(Math.random()*(m-n)+n);
+		}
+		window.onload=function(){
+			var oC = document.querySelector('canvas');
+			var gd = oC.getContext('2d');
+			var oCw = document.documentElement.clientWidth;
+			var oCh = document.documentElement.clientHeight;
+			oC.width = oCw;
+			oC.height = oCh;
+
+			var N = 15;//点的个数
+			var iNum = 100;
+			var aPos = [];
+			var w = 1;//宽
+			var h = 1;//高
+
+			var oldArr = [];
+			gd.fillStyle = 'yellow';//画笔颜色
+			for(var i = 0; i<N;i++){
+				var x = rnd(0,oCw - w);
+				var y = rnd(0,oCh - h);
+				gd.fillRect(x,y,w,h);
+
+				aPos.push({//存入的宽高，x轴的速度 y轴的速度
+					l:x,
+					t:y,
+					speedX:rnd(-5,5),
+					speedY:rnd(-5,5)
+				});
+			}
+			setInterval(function(){
+				gd.clearRect(0,0,oC.width,oC.height);//清画布（小方块）
+
+				var arr = [];
+				for(var i = 0; i<N;i++){
+					if(aPos[i].l <= 0){
+						aPos[i].speedX*= -1;
+					}
+					if(aPos[i].t<=0){
+					aPos[i].speedY*=-1;	
+					}
+					if(aPos[i].l>=oCw-w){
+						aPos[i].speedX*=-1;	
+					}
+					if(aPos[i].t>=oCh-h){
+						aPos[i].speedY*=-1;	
+					}
+					aPos[i].l = aPos[i].l+aPos[i].speedX;
+					aPos[i].t = aPos[i].t+aPos[i].speedY;
+					//变化后存入数组
+					arr[i] = {l:aPos[i].l,t:aPos[i].t};
+					//填充矩形
+					gd.fillRect(aPos[i].l,aPos[i].t,w,h);
+				}
+
+				
+				oldArr.push(arr);
+				if(iNum<oldArr.length){
+					oldArr.shift();
+				}
+				console.log(oldArr);
+
+				//画影子
+				for(var i = 0; i<oldArr.length;i++){
+					//开始路径
+					gd.beginPath();
+					//画笔颜色
+					gd.strokeStyle = 'rgba(255,255,0,'+i/150+')';
+					//路径
+					gd.moveTo(oldArr[i][0].l,oldArr[i][0].t);
+					for(var j = 1; j<oldArr[i].length;j++){
+						gd.lineTo(oldArr[i][j].l,oldArr[i][j].t);
+					}
+					gd.closePath();
+					gd.stroke();
+				}
+				//连线
+				gd.beginPath();
+				gd.strokeStyle="yellow";
+				gd.moveTo(aPos[0].l,aPos[0].t);
+				for(var i = 1;i<aPos.length;i++){
+					gd.lineTo(aPos[i].l,aPos[i].t);
+				}
+				gd.closePath();
+				gd.stroke();
+			},16);
+		}
+	</script>
+</head>
+<body>
+	<canvas></canvas>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>lxx</title>
+	<script>
+		window.onload=function(){
+			var oTe=document.getElementById('te');
+			var oBtn=document.getElementById('btn');
+			oBtn.onclick=function(){
+				var w=window.open('about:blank');
+				w.document.write(oTe.value);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<textarea id="te"cols="30" rows="30"></textarea>
+	<input type="button"value="运行" id="btn"/>
+</body>
+</html>

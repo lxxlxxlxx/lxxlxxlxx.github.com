@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lxx</title>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/css.css"/>
+	<script src="js/js.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/my$.js"></script>
+</head>
+<body>
+	<!-- 首页 -->
+	<div id="open">
+		<a href="#" title="技能展示"><div id="build"></div></a>
+		<a href="#" title="学校"><div id="build1">
+			<div id ='watch'>
+				<div id ='watch1'>
+					<span class="hour"></span>
+					<span class="min"></span>
+					<span class="sec"></span>
+				</div>				
+			</div>
+		</div></a>
+		<a href="#" title="游戏"><div id="build2"></div></a>
+		<a href="#" title="商店">
+			<a href="angular.html"><div id="build3"></div></a>
+		</a>
+		<!-- 热气球 -->
+		<span class="ballonHot"></span>
+		<!-- 云 -->
+		<span class="cloud"></span>
+		<span class="cloud1"></span>
+		<!-- 自动播放小木板 -->
+		<div class="board">
+			<div id="board-box">
+				<ul id="box">
+					<li><img src="img/sucai1.png" alt=""></li>
+					<li><img src="img/sucai2.png" alt=""></li>
+					<li><img src="img/sucai5.png" alt=""></li>
+					<li><img src="img/sucai1.png" alt=""></li>
+					<li><img src="img/sucai2.png" alt=""></li>
+					<li><img src="img/sucai5.png" alt=""></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- 换肤 -->
+		<div id="background">
+			<span id="background1" class="chick"></span>
+			<span id="background2"></span>
+			<span id="background3"></span>			
+		</div>
+	</div>
+	<!-- 技能展示页-->
+	<div id="home">
+		<!-- 显示技能 -->
+		<div class="grass"></div>
+		<div class="css"></div>
+		<div class="javascript"></div>
+		<div class="h5"></div>
+		<div class="css3"></div>
+		<!-- 太阳 -->
+		<div class="sun"></div>
+		<!-- 白云 -->
+		<div class="white">
+			<span class="cloud2"></span>
+			<span class="cloud3"></span>
+		</div>
+		<!-- 热气球 -->
+		<div class ="ballon">
+			<span class="hot1"></span>
+			<span id="hot2"></span>
+		</div>
+	</div>
+	<!-- 学校展示页 -->
+	<div id="shop">
+		<!-- 锚点跳转页面 -->
+		<a href="http://localhost/change/wish.html"><div id="wish"><img src="./img/wish.png" alt=""></div></a>
+		<a href="#box"></a>
+		<div id="music"></div>
+		<div id="back"></div>
+		<!-- 画布 -->
+		<div id="draw"> 
+			<input type="color" style="position:absolute ;left:0; top:0; background-color:pink; color:red; z-index:999;">
+			<input type="button" value="清画布" style="position:absolute ;left:0px; top:50px; z-index:999;">
+			<input type="range" value="5" max="100" style="width:50px;position:absolute ;left:0; top:100px; z-index:999;"/>
+			<input type="color"  style="position:absolute ;left:0; top:150px;z-index:999;">
+			<canvas id="draw1"></canvas>
+		</div>
+		<div class="book">
+	    	<div class="page">
+	        	<span class="front"></span>
+	            <span class="back"></span>
+	        </div>
+        	<div class="right"></div>
+    	</div>
+	</div>
+	<!-- 游戏 -->
+	<div id="game">
+		<a href="plane/plane.html">
+			<span id="gameL"></span>
+		</a>
+		<a href="fish/fish.html"><span id="gameR"></span></a>
+		<a href=""><span id="back1"></span></a>
+	</div>	
+</body>
+</html>
