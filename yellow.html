@@ -1,0 +1,399 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.clearfix:after{display:block;content:"";clear:both;}
+	.clearfix{zoom:1;}
+		.yellow{
+			width:485px;
+			height:168px; 
+			background: #96004a;
+			position:absolute; 
+			left:50%; 
+			top:50%; 
+			margin-left:-250px; 
+			margin-top:-106px;
+			padding:24px 6px 20px 9px;
+			overflow: hidden;
+		}
+		.yellow1{
+			width:72px;
+			height: 130px;
+			background:yellow;
+			border-radius: 30px;
+			float: left;
+			position: relative;
+			z-index: 1;
+		}
+		.kuzi{
+			width:100%;
+			height: 28px;
+			position: absolute;
+			bottom:0;
+			left:0;
+			border-radius: 0 0 30px 30px;
+			background: #667ab3;
+			z-index:1;
+		}
+		.kuzi1{
+			width:58px;
+			height: 20px;
+			position: absolute;
+			bottom:28px;
+			left:7px;
+			z-index:1;
+			background:#667ab3;
+		}
+		.yanjing{
+			width:100%;
+			height: 10px;
+			background: #000;
+			position: absolute;
+			left:0;
+			top:36px;
+			position: relative;
+			
+		}
+		
+		
+		.yan1{
+			width:28px;
+			height: 28px;
+			border-radius: 50%; 
+			position: absolute;
+			left:4px;
+			top:-10px;
+			border:1px solid #878583;
+			background: #fff;
+			position: relative;
+		}
+		.yan1-1{
+			width:22px;
+			height: 22px;
+			border-radius: 50%;
+			position: absolute;
+			left:2px;
+			top:2px;
+			border:1px solid #878583;
+			background: #fff;
+			position: relative;
+		}
+		.yan1-2{
+			width:10px;
+			height: 10px;
+			border-radius: 50%;
+			position: absolute;
+			left:8px;
+			top:5px;
+			border:1px solid #6a3a2d;
+			background: #a25946;
+			position: relative;
+			animation:yanjing 3s linear infinite;
+		}
+		@keyframes yanjing{
+			0% {
+				transform:rotate(0,0);
+			}
+			50% {
+				transform:translate(-8px,0px)
+			}
+			100% {
+				transform:translate(0px,0px)
+			}
+		}
+		.yan1-3{
+			width:4px;
+			height: 4px;
+			border-radius: 50%;
+			position: absolute;
+			left:4px;
+			top:3px;
+			background: #000a0a;
+		}
+		.yan2{
+			width:28px;
+			height: 28px;
+			border-radius: 50%;
+			position: absolute;
+			right:4px;
+			top:-10px;
+			border:1px solid #878583;
+			background: #fff;
+
+		}
+		.ya{
+			width:30px;
+			height: 18px;
+			position: absolute;
+			left:20px;
+			top:50px;
+			border:1px solid #959392;
+			position: relative;
+			border-radius: 40px 40px 10px 10px;
+			background: #fff;
+			overflow: hidden;
+		}
+		.line{
+			width:100%;
+			position: absolute;
+			top:8px;
+			left:0;
+			border-bottom:1px solid #959392;
+		}
+		.line1{
+			height:100%;
+			position: absolute;
+			top:0;
+			left:7px;
+			border-left:1px solid #959392;
+		}
+		.line2{
+			height:100%;
+			position: absolute;
+			top:0;
+			left:15px;
+			border-left:1px solid #959392;
+		}
+		.line3{
+			height:100%;
+			position: absolute;
+			top:0;
+			right:7px;
+			border-left:1px solid #959392;
+		}
+		.dou{
+			width:20px;
+			height: 20px;
+			border:1px solid #576692;
+			position: absolute;
+			bottom:15px;
+			left:25px;
+			z-index:2;
+			border-radius: 0 0 10px 10px;
+		}
+		.dou1{
+			width:8px;
+			height: 8px;
+			position: absolute;
+			left:5px;
+			top:4px;
+			border:1px solid #2d2d35;
+			border-radius: 70%;
+		}
+		.dou2{
+			width:4px;
+			height: 4px;
+			position: absolute;
+			left:2px;
+			top:2px;
+			background: #000;
+			border-radius: 50%;
+		}
+		.footerL{
+			width:13px;
+			height: 8px;
+			background: #667ab3;
+			position: absolute;
+			bottom:-7px;
+			left:19px;
+		}
+		.footerL-1{
+			width:22px;
+			height: 12px;
+			background: #000;
+			position: absolute;
+			right:0;
+			bottom:-12px;
+			border-radius: 100px 0 0 30px;
+		}
+		.footerR{
+			width:13px;
+			height: 8px;
+			background: #667ab3;
+			position: absolute;
+			bottom:-7px;
+			right:19px;
+		}
+		.footerR-1{
+			width:22px;
+			height: 12px;
+			background: #000;
+			position: absolute;
+			left:0;
+			bottom:-12px;
+			border-radius:  0 100px 30px 0;
+		}
+		.kudaiL{
+			width:16px;
+			height: 23px;
+			transform:skew(45deg);
+			background: #667ab3;
+			position: absolute;
+			left:-4px;
+			top:66px;
+		}
+		.kudaiR{
+			width:16px;
+			height: 23px;
+			transform:skew(135deg);
+			background: #667ab3;
+			position: absolute;
+			right:-4px;
+			top:66px;
+		}
+		.box{
+			width:72px;
+			height: 180px;
+			overflow: hidden;
+			padding-top: 10px;
+		}
+		.box1{
+			width:100px;
+			height: 180px;
+			padding-left: 10px;
+			position: relative;
+			margin-left: 20px;
+		}
+		.kou{
+			width:6px;
+			height: 6px;
+			background: #110700;
+			position: absolute;
+			left:7px;
+			top:81px;
+			border-radius: 50%;
+			z-index:1;
+		}
+		.kou1{
+			width:6px;
+			height: 6px;
+			background: #110700;
+			position: absolute;
+			right:7px;
+			top:81px;
+			border-radius: 50%;
+			z-index:1;
+		}
+		.geboL{
+			width:16px;
+			height: 27px;
+			background: yellow;
+			transform:skew(147deg);
+			border:10px;
+			position: absolute;
+			left:0px;
+			top:76px;
+		}
+		.geboR{
+			width:16px;
+			height: 27px;
+			background: yellow;
+			transform:skew(33deg);
+			border:10px;
+			position: absolute;
+			right:18px;
+			top:76px;
+		}
+		.shouL{
+			width:16px;
+			height: 16px;
+			background: #000;
+			position: absolute;
+			right:9px;
+			bottom:69px;
+			z-index:1;
+			border-radius: 50%;
+		}
+		.shouR{
+			width:16px;
+			height: 16px;
+			background: #000;
+			position: absolute;
+			left:-9px;
+			bottom:69px;
+			z-index:1;
+			border-radius: 50%;
+		}
+		.mao1{
+			height:22px;
+			border-left: 1px solid #58002b;
+			position: absolute;
+			left:33px;
+			top:-15px;
+		}
+		.mao2{
+			height:22px;
+			border-left: 1px solid #58002b;
+			position: absolute;
+			left:24px;
+			top:-15px;
+			transform:skew(37deg);
+		}
+		.mao3{
+			height:22px;
+			border-left: 1px solid #58002b;
+			position: absolute;
+			left:42px;
+			top:-15px;
+			transform:skew(143deg);
+		}
+	</style>
+</head>
+<body style="background:#667ab3;">
+	<div class="yellow clearfix">
+		<div class="box1">
+			<div class="box">
+				<div class="yellow1">
+					<div class="kuzi"></div>
+					<div class="kuzi1"></div>
+					<div class="kudaiL"></div>
+					<div class="kou"></div>
+					<div class="kou1"></div>
+					<div class="kudaiR"></div>
+					<div class="yanjing">
+						<div class="yan1">
+							<div class="yan1-1">
+								<div class="yan1-2">
+									<div class="yan1-3"></div>
+								</div>
+							</div>
+						</div>
+						<div class="yan2">
+							<div class="yan1-1">
+									<div class="yan1-2">
+										<div class="yan1-3"></div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="ya">
+						<span class="line"></span>
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</div>
+					<div class="dou">
+						<div class="dou1">
+							<div class="dou2"></div>
+						</div>
+					</div>
+					<div class="footerL">
+						<div class="footerL-1"></div>
+					</div>
+					<div class="footerR">
+						<div class="footerR-1"></div>
+					</div>
+					<span class="mao1"></span>
+					<span class="mao2"></span>
+					<span class="mao3"></span>
+				</div>
+				<div class="shouL"></div>
+			</div>
+			<div class="geboR"></div>
+			<div class="geboL"></div>
+			<div class="shouR"></div>
+		</div>
+	</div>
+</body>
+</html>
