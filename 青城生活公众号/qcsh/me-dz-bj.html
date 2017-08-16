@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>收藏</title>
+	<link rel="stylesheet" href="css/qcsh.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/sc.css"/>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<link rel="stylesheet" href="css/me-ding.css"/>
+	<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="title">
+		<div class="title2">
+			修改地址
+		</div>
+		<div class="back"><a href="me-dz.html"></a></div>
+	</header>
+	<!-- 内容区 -->
+	<section>
+		<!-- 填写信息 -->
+		<ul class="compile">
+			<li>
+				<input type="text" value="收 货 人："/>
+			</li>
+			<li>
+				<input type="text" value="联系电话："/>
+			</li>
+			<li>
+				<input type="text" value="省 市 区："/>
+			</li>
+			<li>
+				<input type="text" value="街道地址："/>
+			</li>
+		</ul>
+			<div class="save">保存地址</div>
+	</section>
+</body>
+</html>

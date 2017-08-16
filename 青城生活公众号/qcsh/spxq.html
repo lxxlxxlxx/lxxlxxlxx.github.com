@@ -1,0 +1,128 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>商品详情</title>
+	<link rel="stylesheet" href="css/qcsh.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/sc.css"/>
+	<link rel="stylesheet" href="css/spxq.css"/>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="title">
+		<div class="title3">
+			<div class="title2">
+			商品信息
+			</div>
+			<div class="back"><a href="qcsh.html"></a></div>
+		</div>
+	</header>
+	<!-- 内容区 -->
+	<section>
+		<div class="banner clearfix banner1">
+			<div class="swiper-container banner2">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">Slide 1</div>
+	            <div class="swiper-slide">Slide 2</div>
+	            <div class="swiper-slide">Slide 3</div>
+	            <div class="swiper-slide">Slide 4</div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	    </div>
+	    <!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true
+	            });
+	    </script>
+		<ul class="shopping">
+			<li>
+				<p class="name1">全脂牛奶 250ml*16</p>
+			</li>
+			<li>
+				<div class="pice clearfix">
+					<p class="pice1">￥109</p>
+					<p class="pice2">卖家优惠</p>
+				</div>
+			</li>
+			<li>
+				<div class="big clearfix">
+					<p>重量5.0kg</p>
+					<p>满88包邮（20kg）</p>
+					<p>月销444笔</p>
+				</div>
+			</li>
+			<li>
+				<p class="number">---参数---</p>
+				<ul class="argument">
+					<li class="clearfix">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+					<li class="clearfix">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+					<li class="clearfix">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+					<li class="clearfix">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+					<li class="clearfix">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+					<li class="clearfix finally">
+						<p class="list1">净含量</p>
+						<p class="list2">1*24*200ml</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul>
+					<p class="number">---评价---</p>
+					<li class="estimate">
+						<p>名字</p>
+						<p>时间</p>
+						<p>啊大概发生的该撒范德萨公司发的规范的公司非的故事感染他人法规</p>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="pic">
+					<p class="number">---详情---</p>
+					<div class="number1">
+						<img src="img/niu2.jpg" alt="">
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<!-- 尾部 -->
+	<footer>
+		<div class="end1 clearfix">
+			<a href="sc.html" class="collect">收藏
+			</a>
+			<a href="#" class="collect1">总价￥0.00</a>
+			<a href="gwc.html" class="car">加入购物车</a>
+		</div>
+	</footer>
+</body>
+</html>

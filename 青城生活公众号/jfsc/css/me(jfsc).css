@@ -1,0 +1,129 @@
+
+.me-back1{
+	width:100%;
+	height: 10.5rem;
+	position: relative;
+}
+.me-back{
+	width:100%;
+	height: 7rem;
+	background: url(../img/me-back1.gif);
+}
+.man{
+	position: absolute;
+	left:37%;
+	top:50%;
+	text-align: center;
+	color:#aaa;
+}
+.man img{
+	width:3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+.content li{
+	 width:100%;
+	 height: 2.8em;
+	 background: #fff;
+	 border-bottom: 0.05rem solid #dcdcdc;
+	 padding:0 1rem 0 0.5rem;
+}
+.me-list1:hover{
+	background:#c6e8ef;
+	transform:rotateX(360deg);
+}
+.content li a{
+	display: block;
+	line-height: 1.9rem;	
+	color:#565858;
+}
+.content li .ji{
+	background: url(../img/mi-ji.png) no-repeat 0 0.3rem;
+	background-size: 1.5rem 1.5rem;
+}
+.content li .shou{
+	background: url(../img/me-shou.png) no-repeat 0 0.3rem;
+	background-size: 1.5rem 1.5rem;
+}
+.content li .you{
+	background: url(../img/mi-you.png) no-repeat 0 0.3rem;
+	background-size: 1.5rem 1.5rem;
+}
+.content li .di{
+	background: url(../img/me-di.png) no-repeat 0 0.3rem;
+	background-size: 1.5rem 1.5rem;
+}
+
+.content li p{
+	margin-left: 1.8rem;
+	float: left;
+}
+.content li span{
+	float: right;
+	display: block;
+}
+.end .on1{
+	background: url(../img/jifen1.png)no-repeat 1.4rem 0.2rem;
+	background-size: 1.2rem 1.2rem;
+}
+.end .on a{
+	color:#096;
+}
+.me-list1{
+	width: 100%;
+	height:2.55rem;
+	background: #fff;
+	border-bottom:1px solid #e3e0e0;
+}
+.me-list1 .left{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.me-list1 .font{
+	font-size: 0.75rem;
+	color:#000;
+}
+.me-list1 .right{
+	width: 2.5rem;
+	height: 2.5rem;
+	background: url("../img/-12.png") no-repeat center;
+	background-size: 24%;
+}
+.flex-box{
+	/** 各种版本兼容**/
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	/*以下为最新版本语句*/
+	display: -webkit-flex;
+	display: flex;
+	transition:transform 1s ease;
+}
+.midCenter{
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack:center;
+	-moz-box-align: center;
+	
+	-webkit-box-align: center;
+	box-align: center;
+	box-pack:center;
+	-ms-flex-pack:center;
+	display: -ms-flexbox;
+	-ms-flex-align:center;
+
+	/*以下为最新版本语句*/
+	justify-content:center;
+	align-items: center;
+}
+/*应用在伸缩盒子的子盒子上*/
+.flex1{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+    -webkit-flex: 1;
+	flex: 1;	
+}
+section{
+	background: none;
+}

@@ -1,0 +1,70 @@
+.me{
+	width:100%;
+	height: 7rem;
+	background: url(../img/bei.png);
+	padding:2rem 1rem 2rem 1rem;
+}
+.me .pic{
+	width:3rem;
+	height: 3rem;
+	border-radius: 50%;
+	float: left;
+}
+.me .pic1{
+	float: left;
+	margin-left: 1.5rem;
+	line-height: 1.5rem;
+}
+.me .pic img{
+	width:100%;
+	border-radius: 50%;
+}
+.miss{
+	padding:1rem 0 1rem 1rem;
+
+}
+.miss li{
+	border:0.05rem solid #ccc;
+	width:4rem;
+	height: 4rem;
+	float: left;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	/* line-height: 6rem; */
+	overflow: hidden;
+	box-shadow:0.05rem 0.05rem 0.05rem #aaa;
+}
+.miss li a{
+	color:#aaa;
+	display: block;
+	padding-top: 2.5rem;
+	padding-bottom: 0.45rem;
+}
+.miss li:hover{
+	opacity: 0.5;
+}
+.miss .miss1{
+	background: url(../img/mexiao.png) no-repeat 1rem 0.5rem;
+	background-size:1.8rem 1.8rem;
+}
+.miss .miss2{
+	background: url(../img/megou.png) no-repeat 1rem 0.5rem;
+	background-size:1.8rem 1.8rem;
+}
+.miss .miss3{
+	background: url(../img/meyou.png) no-repeat 1rem 0.5rem;
+	background-size:1.8rem 1.8rem;
+}
+.miss .miss4{
+	background: url(../img/meshou.png) no-repeat 1rem 0.5rem;
+	background-size:1.8rem 1.8rem;
+}
+.end .on{
+	background: url(../img/meh.png)no-repeat 1.4rem 0.2rem;
+	background-size: 1.2rem 1.2rem;
+}
+.on a{
+	color:#096;
+}
+

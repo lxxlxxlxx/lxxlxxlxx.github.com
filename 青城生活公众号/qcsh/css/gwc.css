@@ -1,0 +1,49 @@
+.box{
+	float: left;
+}
+.t1 {
+    text-align: center;
+}
+.btn{
+	float: left;
+	width:100%;
+}
+.btn input{
+	width:1.2rem;
+	height: 1.2rem;
+}
+.goods .goodsL .cancel{
+	width:1.2rem;
+	float: left;
+	margin-left: 2rem;
+}
+.goods-img{
+	margin-left: 0.5rem;
+}
+.goods .goodsL1 .btn{
+	width:100%;
+}
+.goods .goodsL2{
+	width:100%;
+}
+.goodsL3{
+	margin-left:1.5rem;
+}
+footer ul li{
+	line-height: 2rem;
+}
+footer ul .hjL{
+	float: left;
+	margin-left: 1rem;
+}
+footer ul .hjR{
+	float:right;
+	height: 2rem;
+	width:6.4rem;
+	background: orange;
+	text-align: center;
+	color:#fff;
+}
+.hjR a{
+	color:#fff;
+}

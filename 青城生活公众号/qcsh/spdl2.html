@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>qcsh</title>
+	<link rel="stylesheet" href="css/qcsh.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/sc.css"/>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<script src="js/index.js"></script>
+	<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="title">
+		<div class="title1">
+			<div class = "search">
+		    	<input type = "text" placeholder = "请输入您要搜索的商品名称"/>
+		    </div>
+		     <a href="#" class="suo"><img src="img/suo.png" alt=""/></a>
+		</div>
+		<div class="back"><a href="qcsh.html"></a></div>
+	</header>
+	<!-- 内容区 -->
+	<section>
+		<ul  id="name" class="clearfix">
+			<li class="on">
+				<a href="#" >默认</a>
+			</li>
+			<li>
+				<a href="#">价格</a>
+			</li>
+			<li>
+				<a href="#">销量</a>
+			</li>
+			<li>
+				<a href="#">人气</a>
+			</li>
+		</ul>
+		<div class="banner">
+			<img src="img/niu1.jpg" class="response-width" style="vertical-align:middle">
+		</div>
+       <!-- 商品信息 -->
+		<div class="content">
+			<div class="content-1">
+				<h3><span>————</span>全场满减<span>————</span></h3>
+				<h4>买100减10元</h4>
+			</div>
+			<a href="spxq.html" class="box">
+		   			<div class="box-1"><img src="img/niu1.jpg"class="response-height"></div>
+		   			<div class="box-2">
+		   				<h3><strong>￥</strong>17.<span>90</span></h3>
+		   				<p>百草味 坚果炒货 夏威夷果奶油味200g/袋</p>
+		   			</div>
+		   		</a>
+		   		<a href="spxq.html" class="box boxr">
+		   			<div class="box-1"><img src="img/niu1.jpg"class="response-height"></div>
+		   			<div class="box-2">
+		   				<h3><strong>￥</strong>39.<span>90</span></h3>
+		   				<p>百草味 东北松子200gx2袋坚果炒货零食干果</p>
+		   			</div>
+		   		</a>
+		   		<a href="spxq.html" class="box">
+		   			<div class="box-1"><img src="img/niu1.jpg"class="response-height response-width"></div>
+		   			<div class="box-2">
+		   				<h3><strong>￥</strong>18.<span>90</span></h3>
+		   				<p>百草味 坚果干果 巴旦木180g/袋 奶香味薄壳</p>
+		   			</div>
+		   		</a>
+		   		<a href="spxq.html" class="box boxr">
+		   			<div class="box-1"><img src="img/niu1.jpg"class="response-height"></div>
+		   			<div class="box-2">
+		   				<h3><strong>￥</strong>28.<span>90</span></h3>
+		   				<p>百草味 坚果干果 开心果200G/袋</p>
+		   			</div>
+		   		</a>
+		   	<div class="clear"></div>
+		</div>
+	</section>
+	<!-- 尾部 -->
+	<footer>
+		<ul class="end clearfix" id="end">
+			<li class="list1">
+				<!-- <img src="img/shouye.png" alt=""/> -->
+				<a href="qcsh.html">首页</a>
+			</li>
+			<li class="list2">
+				<!-- <img src="img/shou.png" alt=""/> -->
+				<a href="sc.html">收藏</a>
+			</li>
+			<li class="list3">
+				<!-- <img src="img/gou3.png" alt=""/> -->
+				<a href="gwc.html">购物车</a>
+			</li>
+			<li class="list4">
+				<!-- <img src="img/me.png" alt=""/> -->
+				<a href="me.html">我</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>

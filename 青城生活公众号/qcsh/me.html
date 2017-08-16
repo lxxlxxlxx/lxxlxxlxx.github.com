@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>qcsh</title>
+	<link rel="stylesheet" href="css/qcsh.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/sc.css"/>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<link rel="stylesheet" href="css/me.css"/>
+	<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="title">
+		<div class="title3">
+			<div class="title2">
+			会员中心
+			</div>
+			<div class="back"><a href="qcsh.html"></a></div>
+		</div>
+	</header>
+	<!-- 内容区 -->
+	<section>
+		<!-- 人物信息与积分 -->
+		<div class="me clearfix">
+			<div class="pic">
+				<img src="img/man3.jpg" alt="">
+			</div>
+			<div class="pic1">
+				<p>姓　　名：XXX</p>
+				<p>可用积分：XXX</p>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div id="name">	
+			<ul id="dai" class="clearfix">
+				<li>
+					<a href="me-dfk.html">待付款</a>
+				</li>
+				<li>
+					<a href="me-dfh.html">待发货</a>
+				</li>
+				<li>
+					<a href="me-dsh.html">待收货</a>
+				</li>
+				<li>
+					<a href="me-ywc.html">已完成</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 订单、购物车、地址、收藏 -->
+		<ul class="miss clearfix">
+			<li>
+				<a href="me-ding.html" class="miss1">我的订单</a>
+			</li>
+			<li>
+				<a href="gwc.html" class="miss2">我的购物车</a>
+			</li>
+			<li>
+				<a href="me-dz.html" class="miss3">我的地址</a>
+			</li>
+			<li>
+				<a href="sc.html" class="miss4">我的收藏</a>
+			</li>
+		</ul>
+	</section>
+	<!-- 尾部 -->
+	<footer>
+		<ul class="end clearfix" id="end">
+			<li class="list1">
+				<!-- <img src="img/shouye.png" alt=""/> -->
+				<a href="qcsh.html">首页</a>
+			</li>
+			<li class="list2">
+				<!-- <img src="img/shou.png" alt=""/> -->
+				<a href="sc.html">收藏</a>
+			</li>
+			<li class="list3">
+				<!-- <img src="img/gou3.png" alt=""/> -->
+				<a href="gwc.html">购物车</a>
+			</li>
+			<li class="list4 on">
+				<!-- <img src="img/me.png" alt=""/> -->
+				<a href="me.html">我</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>

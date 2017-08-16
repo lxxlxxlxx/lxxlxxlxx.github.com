@@ -1,0 +1,313 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
+	<title>qcsh</title>
+	<link rel="stylesheet" href="css/qcsh.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/swiper.min.css"/>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+		<script>
+		(function(win,doc){
+			function change(){
+				doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+	<header class="title">
+		<div class="title1 clearfix">
+			<div class = "search">
+		    	<input type = "text" placeholder = "请输入您要搜索的商品名称"/>
+		    </div>
+		    <a href="#" class="suo"><img src="img/suo.png" alt=""/></a>
+		</div>
+		<!-- <div class="back"></div> -->
+	</header>
+	<!-- 轮播 -->
+	<div class="banner clearfix">
+			<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">Slide 1</div>
+	            <div class="swiper-slide">Slide 2</div>
+	            <div class="swiper-slide">Slide 3</div>
+	            <div class="swiper-slide">Slide 4</div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	    </div>
+
+	    <!-- Swiper JS -->
+	   <script> 
+		var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.swiper-pagination',
+        paginationClickable: true,
+	    autoplay:2000,
+	    autoplayDisableOnInteraction:false
+
+		})
+		mySwiper.progress;
+		mySwiper.slides[2].progress;
+		</script>
+	</div>
+	<!-- 导航区 -->
+	<header class="nav clearfix">	
+			<nav>
+				<a href="spdl1.html"><img src="img/niu.png" alt=""/></a>
+				<a href="spdl1.html" class="nav1">牛奶</a>
+			</nav>
+			<nav>
+				<a href="spdl2.html"><img src="img/you.png" alt=""/></a>
+				<a href="spdl2.html" class="nav1">米面油</a>
+			</nav>
+			<nav>
+				<a href="spdl3.html"><img src="img/cai.png" alt=""></a>
+				<a href="spdl3.html" class="nav1">蔬菜</a>
+			</nav>
+			<nav>
+				<a href="spdl4.html"><img src="img/guo.png" alt=""></a>
+				<a href="spdl4.html" class="nav1">水果</a>
+			</nav>
+			<nav>
+				<a href="spdl5.html"><img src="img/te.png" alt=""></a>
+				<a href="spdl5.html" class="nav1">特色产品</a>
+			</nav>
+			
+	</header>
+	<!-- 内容区 -->
+	<section >
+		<ul  id="name" class="clearfix">
+			<li class="on">
+				<a href="#" >默认</a>
+			</li>
+			<li>
+				<a href="#">价格</a>
+			</li>
+			<li>
+				<a href="#">销量</a>
+			</li>
+			<li>
+				<a href="#">人气</a>
+			</li>
+		</ul>
+		<div id="name1">
+			<ul class="goods clearfix" style="display:block;">
+				<li class="clearfix">
+					<div class="goodsL ">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+			</ul>
+			<ul class="goods clearfix">				
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+				
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+			</ul>
+			<ul class="goods clearfix">
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+			</ul>
+			<ul class="goods clearfix">
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+				<li class="clearfix">
+					<div class="goodsL clearfix">
+						<a href="spxq.html" class="clearfix">
+							<img src="img/niu1.jpg" alt=""/>
+							<div>
+								<p>现代牧业纯牛奶（尊贵礼盒装）</p>
+								<p class="price">
+									<span class="price1">￥55</span>
+									<span class="price2">原价：￥69</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- 尾部 -->
+	<footer>
+		<ul class="end clearfix" id="end">
+			<li class="list1 on">
+				<!-- <img src="img/shouye.png" alt=""/> -->
+				<a href="qcsh.html">首页</a>
+			</li>
+			<li class="list2">
+				<!-- <img src="img/shou.png" alt=""/> -->
+				<a href="sc.html">收藏</a>
+			</li>
+			<li class="list3">
+				<!-- <img src="img/gou3.png" alt=""/> -->
+				<a href="gwc.html">购物车</a>
+			</li>
+			<li class="list4">
+				<!-- <img src="img/me.png" alt=""/> -->
+				<a href="me.html">我</a>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>
