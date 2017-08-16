@@ -95,7 +95,7 @@ body{overflow: hidden;}
 	background: #000;
 	position: absolute;
 	top:24%;
-	left:34px;
+	left:47%;
 }
 .min{
 	width:5%;
@@ -103,7 +103,7 @@ body{overflow: hidden;}
 	background: lime;
 	position: absolute;
 	top:22%;
-	left: 34px;
+	left: 47%;
 }
 .sec{
 	width:5%;
@@ -111,7 +111,7 @@ body{overflow: hidden;}
 	background:pink;
 	position: absolute;
 	top:17%;
-	left:34px; 
+	left:47%; 
 }
 #open #build2{
 	width:15%;
@@ -279,6 +279,8 @@ body{overflow: hidden;}
 	background-image: url(../img/e1.png);
 	background-size:100% 100%;
 	position: absolute;
+	bottom:0;
+	left:0;
 	z-index: 999;
 	margin-top: 403px;
 }
@@ -286,118 +288,107 @@ body{overflow: hidden;}
 	width:198px;
 	height:534px;
 	background-image: url(../img/a.png);
-	margin-top: 500px; 
 	position: absolute;
+	bottom:-366px;
+	left:0;
 	animation:css 2s linear forwards; 
 
 }
-@keyFrames css{
-	0%{
-		margin-top: 500px;
-	}
-	20%{
-		margin-top: 510px;
-	}
-	40%{
-		margin-top: 410px;
-	}
-	60%{
-		margin-top: 310px;
-	}
-	80%{
-		margin-top: 210px;
-	}
-	100%{
-		margin-top: 110px;
-	}
-}
+  @keyFrames css{
+ 	0%{
+ 		bottom: -366px;
+ 	}
+ 	25%{
+ 		bottom: -274.5px;
+ 	}
+ 	50%{
+ 		bottom: -183px;
+ 	}
+ 	75%{
+ 		bottom: -91.5px;
+ 	}
+ 	100%{
+ 		bottom: 0px;
+ 	}
+ } 
 #home .javascript{
 	width:200px;
 	height:624px;
 	background-image: url(../img/b.png);
-	margin-top: 500px; 
-	margin-left: 198px;
 	position: absolute;
+	bottom:-464px;
+	left:198px;
 	animation:javascript 2s linear 2s forwards;
 }
 @keyFrames javascript{
 	0%{
-		margin-top: 550px;
-	}
-	20%{
-		margin-top: 450px;
-	}
-	40%{
-		margin-top: 350px;
-	}
-	60%{
-		margin-top: 250px;
-	}
-	80%{
-		margin-top: 150px;
-	}
-	100%{
-		margin-top: 50px;
-	}
+ 		bottom: -464px;
+ 	}
+ 	25%{
+ 		bottom: -274.5px;
+ 	}
+ 	50%{
+ 		bottom: -183px;
+ 	}
+ 	75%{
+ 		bottom: -91.5px;
+ 	}
+ 	100%{
+ 		bottom: 0px;
+ 	}
 }
 #home .h5{
 	width:202px;
 	height:528px;
 	background-image: url(../img/c.png);
-	margin-top: 505px; 
-	margin-left: 398px;
 	position: absolute;
+	bottom:-384px;
+	left:398px;
 	animation:hh 2s linear 4s forwards;
 }
 @keyFrames hh{
 	0%{
-		margin-top: 500px;
-	}
-	20%{
-		margin-top: 470px;
-	}
-	40%{
-		margin-top: 370px;
-	}
-	60%{
-		margin-top: 270px;
-	}
-	80%{
-		margin-top: 170px;
-	}
-	100%{
-		margin-top: 70px;
-	}
+ 		bottom: -384px;
+ 	}
+ 	25%{
+ 		bottom: -288px;
+ 	}
+ 	50%{
+ 		bottom: -194px;
+ 	}
+ 	75%{
+ 		bottom: -100px;
+ 	}
+ 	100%{
+ 		bottom: 0px;
+ 	}
 }
 #home .css3{
 	width:198px;
 	height:534px;
 	background-image: url(../img/d.png);
-	margin-top:580px; 
-	margin-left: 598px;
 	position: absolute;
+	bottom:-404px;
+	left:598px;
 	animation:csss 2s linear 6s forwards;
 }
-@keyFrames csss{
+ @keyFrames csss{
 	0%{
-		margin-top: 580px;
-	}
-	20%{
-		margin-top: 580px;
-	}
-	40%{
-		margin-top: 480px;
-	}
-	60%{
-		margin-top: 380px;
-	}
-	80%{
-		margin-top: 280px;
-	}
-	100%{
-		margin-top: 200px;
-	}
-}
+ 		bottom: -404px;
+ 	}
+ 	25%{
+ 		bottom: -303px;
+ 	}
+ 	50%{
+ 		bottom: -202px;
+ 	}
+ 	75%{
+ 		bottom: -101px;
+ 	}
+ 	100%{
+ 		bottom: 0px;
+ 	}
+} 
 #home .ballon .hot1{
 	width:112px;
 	height: 139px;
@@ -455,15 +446,15 @@ body{overflow: hidden;}
 }
  #draw{
 	position: absolute;
-	top:63px;
-	left:750px;
+	top:4%;
+	left:62%;
 }
 canvas{
 	background:#fff; 
 	display: block;
-	width:325px; 
-	height:220px;
-	border:1px solid red;
+	width:340px; 
+	height:267px;
+	border:1px solid #ccc;
 	position: relative;
 }
 #back{
@@ -473,8 +464,8 @@ canvas{
 	background-image: url(../images/back.png);
 	background-size: 100% 100%;
 	position: absolute;
-	top:530px;
-	right:105px;
+	top:74%;
+	right:85px;
 }
 #back1{
 	display: block;
@@ -483,7 +474,7 @@ canvas{
 	background-image: url(../images/back.png);
 	background-size: 100% 100%;
 	position: absolute;
-	top:520px;
+	top:74%;
 	right:85px;
 }
 #game{
@@ -500,8 +491,8 @@ canvas{
 	background-image: url(../img/play2.png);
 	background-size:100% 100%; 
 	position: absolute;
-	left:135px;
-	top:50px;
+	left:11%;
+	top:19%;
 }
 #gameR{
 	width:35%;
@@ -509,16 +500,17 @@ canvas{
 	background-image: url(../img/play4.png);
 	background-size:100% 100%; 
 	position: absolute;
-	right:130px;
-	top:50px;
+	right:11%;
+	top:19%;
 }
 .book{ 
 	width:300px; 
 	height:200px;
 	background-image:url(../img/0.jpg); 
 	margin-top:400px; 
-	margin-left: 550px;
-	position:relative;}
+	/* margin-left: 550px; */
+	position:relative;
+}
 .page{ 
 	position:absolute; 
 	top:0; right:0; width:50%; 

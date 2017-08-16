@@ -25,7 +25,11 @@ window.onload=function(){
 	var oCar = document.getElementById('car');
 	var oBack1 = document.getElementById('back1');
 
-
+	var oCH = document.documentElement.clientHeight;
+	oOpen.style.height = oCH+'px';
+	oHome.style.height = oCH+'px';
+	oGame.style.height = oCH+'px';
+	oShop.style.height = oCH+'px';
 	oBack.onclick=function(){
 		oOpen.style.display = 'block';
 		oShop.style.display = 'none';
@@ -254,35 +258,39 @@ window.onload=function(){
 	}
 	/*翻页效果*/
 	var oBook=document.querySelector('.book');
-		var oPage=oBook.querySelector('.page');
-		var oFront=oPage.querySelector('.front');
-		var oBack=oPage.querySelector('.back');
-		var oRight=oBook.querySelector('.right');
-		var iNow=0;
-		var bReady=true;
+	var oPage=oBook.querySelector('.page');
+	var oFront=oPage.querySelector('.front');
+	var oBack=oPage.querySelector('.back');
+	var oRight=oBook.querySelector('.right');
+	var iNow=0;
+	var bReady=true;
+	
+	oBook.style.marginLeft = (document.documentElement.clientHeight)*0.6+'px';
+	oBook.style.marginTop = (document.documentElement.clientHeight)*0.6+'px';
+	oBook.onclick=function(){
+		if(!bReady)return;
+		bReady=false;
+		iNow++;
+		oPage.style.transition='1s';
+		oPage.style.transform='perspective(800px) rotateY(-180deg)';	
+	};
+	
+	oPage.addEventListener('transitionend',function(){
+		oPage.style.transition='none';
+		oPage.style.transform='perspective(800px) rotateY(0deg)';	
 		
-		oBook.onclick=function(){
-			if(!bReady)return;
-			bReady=false;
-			iNow++;
-			oPage.style.transition='1s';
-			oPage.style.transform='perspective(800px) rotateY(-180deg)';	
-		};
+		//切换图片
+		oBook.style.backgroundImage='url(img/'+iNow%3+'.jpg)';
+		oFront.style.backgroundImage='url(img/'+iNow%3+'.jpg)';
 		
-		oPage.addEventListener('transitionend',function(){
-			oPage.style.transition='none';
-			oPage.style.transform='perspective(800px) rotateY(0deg)';	
-			
-			//切换图片
-			oBook.style.backgroundImage='url(img/'+iNow%3+'.jpg)';
-			oFront.style.backgroundImage='url(img/'+iNow%3+'.jpg)';
-			
-			oBack.style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';
-			
-			oRight.style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';
-			
-			bReady=true;
-			
-		},false);
-	 
+		oBack.style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';
+		
+		oRight.style.backgroundImage='url(img/'+(iNow+1)%3+'.jpg)';
+		
+		bReady=true;
+		
+	},false);
+	 	 
+
+
 }

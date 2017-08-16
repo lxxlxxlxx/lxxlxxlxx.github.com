@@ -6,17 +6,21 @@
 	<script src="js/angular.js"></script>
 	<style>
 		body{
-			background:url(img/14879234611511.png);		
+			background:url(img/14879234611511.png);	
+			background-size: 100% 100%;
+			width:100%;
+			padding-top: 55px;
+			overflow: hidden;
 		}
 		.car{
 			width:100px;
 			height: 29px;
 			font-size: 29px;
-			/* margin:200px auto; */
 			color:#f26e3d;
 			display: block;
-			margin:55px auto;
+			margin:0 auto;
 			font-weight: bold;
+			margin-bottom:20px;
 		}
 		table{
 			border-collapse: collapse;
@@ -37,50 +41,50 @@
 			width:208px;
 			height: 202px;
 			position: absolute;
-			top:10px;
-			left:205px;
+			top:10%;
+			left:15%;
 		}
 		.food2{
 			width:241px;
 			height: 216px;
 			position: absolute;
-			top:10px;
-			left:850px;
+			top:10%;
+			left:70%;
 		}
 		.food3{
 			width:141px;
 			height: 242px;
 			position: absolute;
-			top:175px;
-			left:100px;
+			top:30%;
+			left:11%;
 		}
 		.food4{
 			width:192px;
 			height: 185px;
 			position: absolute;
-			top:404px;
-			left:230px;
+			top:45%;
+			left:22%;
 		}
 		.food5{
 			width:177px;
 			height: 196px;
 			position: absolute;
-			top:220px;
-			left:997px;
+			top:36%;
+			left:76%;
 		}
 		.food6{
 			width:183px;
 			height: 189px;
 			position: absolute;
-			top:375px;
-			left:818px;
+			top:50%;
+			left:60%;
 		}
 		.food7{
 			width:158px;
 			height: 160px;
 			position: absolute;
-			top:445px;
-			left:575px;
+			top:50%;
+			left:44%;
 		}
 		.food7 img{
 			width:144px;
@@ -91,7 +95,7 @@
 		height:65px;
 		position: absolute;
 		right:75px;
-		top:520px;
+		top:74%;
 		display: block;
 		background-image: url(images/back.png);
 		background-size:100% 100%;
@@ -117,9 +121,14 @@
 				return res;
 			}
 		}) 
+		window.onload=function(){
+			var oBody = document.getElementById('body');
+			oBody.style.height = (document.documentElement.clientHeight)-55+'px';
+		}
+		
 	</script>
 </head>
-<body>
+<body id="body">
 	<div class="car">购物车</div>
 	<table ng-controller="buy">
 		<tr class="name">
