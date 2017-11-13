@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>旋转</title>
+	<script src="js/js.js"></script>
+	<script src="js/jquery-1.11.1.js"></script>
+	<style>
+		.clearfix:after{display:block; content:''; clear:both;}
+		.clearfix{zoom:1;} 
+		body{overflow: hidden;} 
+		ul{
+			width:100%;
+			overflow: hidden;
+		}
+		li{
+			width:25%;
+			
+			list-style-type: none;
+		}
+		#child1{
+			position: absolute;
+			left:50%;
+			top:50px;
+			margin-left: -200px;
+			transform-origin: center 1300px 0;
+		    transform-style: preserve-3d;
+		    transition: 2s all;
+		}
+		#child2{
+			position: absolute;
+			left:50%;
+			top:50px;
+			margin-left: -200px;
+			transform-origin: center 1300px 0;
+		    transform-style: preserve-3d;
+		    transition: 2s ;
+		}
+		#child3{
+			position: absolute;
+			left:50%;
+			top:50px;
+			margin-left: -200px;
+			transform-origin: center 1300px 0;
+		    transform-style: preserve-3d;
+		    transition: 2s all;
+		}
+		#child4{
+			position: absolute;
+			left:50%;
+			top:50px;
+			margin-left: -200px;
+			transform-origin: center 1300px 0;
+		    transform-style: preserve-3d;
+		    transition: 2s;
+		}
+	</style>
+</head>
+<body>
+	<ul class="clearfix">
+		<li id="child1"><img src="img/tou_13.png" alt=""/></li>
+		<li id="child2"><img src="img/tou_14.png" alt=""/></li>
+		<li id="child3"><img src="img/tou_17.png" alt=""/></li>
+		<li id="child4"><img src="img/tou_18.png" alt=""/></li>
+	</ul>
+</body>
+</html>
