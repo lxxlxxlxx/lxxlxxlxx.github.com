@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>lyj</title>
+	<link rel="stylesheet" href="css/css.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<script >
+		window.onload=function(){		
+			var now= new Date();
+			var year=now.getFullYear();
+			var month=now.getMonth();
+			var date=now.getDate();
+			var show_day=new Array('星期日','星期一','星期二','星期三','星期四','星期五','星期六'); 
+			var day=now.getDay(); 
+			document.getElementById("logoR").innerHTML="今天是："+year+"年"+(month+1)+"月"+date+"日 "+show_day[day];
+		}	
+	</script>
+</head>
+<body>
+	<div class="center">
+		<div class="logo clearfix">
+		<h1 class="clearfix logoL" >
+			<span class="logo1"></span>
+			<span class="logo2">呼和浩特市旅游发展委员会</span>
+		</h1>
+		<p id="logoR"></p>
+		
+	</div>
+	<div class="center1">
+		<div class="login">
+			<div class="login1">
+				<input type="text" class="text" placeholder="请输入用户名"onfocus="this.placeholder=''" onblur="this.placeholder='输入用户名'">
+				<input type="password" class="pw" placeholder="请输入密码"onfocus="this.placeholder=''" onblur="this.placeholder='请输入密码'">
+				<div class="clearfix">
+					<input type="text" class="yan1">
+					<span class="yan"></span>
+				</div>
+				<a href="homePage.html"><div class="deng">登录</div></a>
+				<div class="wang" >忘记密码？</div>
+			</div>
+		</div>
+		<div class="footer">
+				<div class="clearfix end">
+					<span class="china">Ch<i>i</i>na</span>
+					<img src="img/lian.png" alt="" class="footer-img"/>
+					<div class="footer2 ">
+						<span class="china1">un<i>i</i>com中国联通</span>
+					</div>
+				</div>
+				<div class="footer1">
+					
+					技术支持：中国联合网络通信有限公司呼和浩特市分公司
+				</div>
+		</div>
+	</div>
+	</div>
+	
+</body>
+</html>

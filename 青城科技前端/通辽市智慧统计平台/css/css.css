@@ -1,0 +1,110 @@
+#body{
+	background: url(../img/bg4.jpg);
+	background-size: 100% 100%;
+	color:#fff;
+}
+.top{
+	height:80px;
+	width:100%;
+	border-bottom: 5px solid #b0e0f6;
+	margin-bottom: 5px;
+}
+.topL{
+	width:500px;
+	float: left;
+	margin-left: 20px;
+}
+.logo{
+	margin:5px;
+	width:69px;
+	height: 66px;
+	background: url(../img/logo1.png);
+	float: left;
+	margin-right: 20px;
+}
+.name{
+	line-height: 80px;
+	font-size: 36px;
+	float: left;
+	font-style:italic;
+	font-family: '宋体';
+}
+.topR{
+	width:176px;
+	float: right;
+	margin-right: 35px;
+	margin-top: 10px;
+	line-height: 30px;
+}
+.topR1{
+	display: block;	
+	font-size:20px;
+	text-align: left;
+}
+.topR2{
+	display: block;
+	font-size:20px;
+	text-align: right;
+}
+#content{
+	width:100%;
+
+	/* border-bottom: 2px solid #b0e0f6; */
+	/* position: absolute;
+	left:50%;
+	top:50%;
+	margin-left: -600px;
+	margin-top: -300px; */
+}
+canvas{ 
+	margin:0 auto; 
+	/* border:1px solid #000; */ 
+	display:block;
+	
+}
+.content1{
+	width:1200px;
+	margin:0 auto;
+	position: relative;
+}
+.xt-1{
+	position: absolute;
+	left:207px;
+	top:49px;
+}
+.xt-2{
+	position: absolute;
+	left:785px;
+	top:7px;
+}
+.xt-4{
+	position: absolute;
+	left:990px;
+	top:200px;
+}
+.xt-3{
+	position: absolute;
+	left:130px;
+	top:340px;
+}
+.xt-5{
+	position: absolute;
+	left:945px;
+	top:418px;
+}
+.content1 a{
+	display: block;
+	font-size: 14px;
+	color:#fff;
+	line-height: 22px;
+}
+.content1 a:hover{
+	color:#77eaed;
+}
+.content1 h3{
+	font-size: 24px;
+	font-family: '宋体';
+	font-style:italic;
+	font-weight: bold;
+	margin-bottom: 5px;
+}

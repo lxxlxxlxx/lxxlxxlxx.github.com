@@ -1,0 +1,313 @@
+#body{
+	width:100%;
+	background: url(../img/m_bg.gif);
+	font-size:'微软雅黑';
+	font-size: 12px;
+}
+#body1{
+	width:100%;
+	background: url(../img/m_bg.gif);
+	font-size:'微软雅黑';
+	font-size: 12px;
+
+}
+
+.center{
+	width:1200px;
+	margin:0 auto;
+}
+
+#on{
+	color:#000;
+}
+.top{
+	width:100%;
+	height:40px;
+	color:#fff;
+}
+.top1 a{
+	color:#fff;
+}
+.header{
+	margin-bottom: 25px;
+	color:#fff;
+}
+.top1{
+	float: right;
+}
+.logo-l{
+	float: left;
+}
+.logo1{
+	float: left;
+	margin-right: 15px;
+}
+.logo2{
+	width:222px;
+	float: left;
+}
+.logo2-1{
+	font-size: 24px;
+}
+.logo2-2{
+	font-size: 9px;
+}
+
+.logo-m{
+	float: left;
+}
+#container {
+	width:500px;
+	height:820px;
+	margin:0 auto;
+}
+div.search {
+	margin:24px 0 0 37px;
+}
+form {
+	position:relative;
+	width:255px;
+	margin:0 auto;
+}
+input,button {
+	border:none;
+	outline:none;
+}
+input {
+	width:100%;
+	height:34px;
+	padding-left:13px;
+}
+button {
+	height:34px;
+	width:42px;
+	cursor:pointer;
+	position:absolute;
+	z-index:2;
+}
+.bar8 form {
+	height:34px;
+}
+.bar8 input {
+	padding:0 34px 0 15px;
+	border-bottom:2px solid transparent;
+	background:transparent;
+	transition:.3s linear;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:2;
+	color:#fff;
+	border:1px solid #fff;
+}
+.bar8 input:focus {
+	width:255px;
+	z-index:1;
+	
+}
+.bar8 button {
+	background:#fff;
+	top:0;
+	right:0;
+
+}
+.bar8 button:before {
+	width:20px;
+	height:20px;
+	font-family:FontAwesome;
+	font-size:16px;
+	color:#F9F0DA;
+}
+ input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+         color: #aab2bd;
+        /* placeholder字体大小  */
+       
+    }
+.logo-r{
+	float: left;
+	width:380px;
+	margin:24px 0 0 15px;
+}
+.sort-r{
+	float: right;
+}
+.sort-l{
+	float: left;
+}
+.sort-b{
+	margin-top:4px;
+	float: left;
+}
+.content{
+	width:100%;
+	height:752px;
+	background: url(../img/bg2.png);
+	padding:40px 108px 116px 108px;
+}
+.content1{
+	width:100%;
+	height:752px;
+	background: url(../img/bg2.png);
+	padding:40px 85px 116px 85px;
+}
+.Keyword{
+	margin-left: 5px;
+	color:#ff0000;
+	margin-bottom:15px;
+}
+.text4{
+	height:32px;
+	background: url(../img/bg--top.png);
+}
+.text5{
+	border:1px solid #81511c;
+	margin-bottom:3px;
+	text-align: center;
+}
+.paging li{
+	float: left;
+	border:1px solid #81511c;
+	margin-left: 3px;
+	padding:8px 10px;
+	margin-top: 33px;
+}
+table {
+	font-size: 12px;
+}
+#paging{
+	width:100%;
+}
+.paging{
+	width:380px;
+	margin:0 auto;
+}
+.paging a{
+	display: block;
+}
+.paging li:hover{
+	background: #b5791f;
+}
+.paging-on{
+	background: #b5791f;
+}
+.sort-b a:hover{
+	color:#000;
+}
+.top1 a:hover{
+	color:#000;
+}
+.footer{
+	width:345px;
+	margin:0 auto;
+	margin-top: 15px;
+	text-align: center;
+	color:#362a04;
+}
+.content-l{
+	
+	margin-top:60px;
+	float: left;
+}
+.content-r{
+	float: right;
+	width:424px;
+	height: 470px;
+	border:1px solid #ccc;
+	margin-top: 30px;
+	
+}
+.content-r img{
+	width:564px;
+	height:378px; 
+}
+.back{
+	width:100%;
+}
+.back a{
+	display: block;
+	float: right;
+	color:#fa0b0b;
+}
+.back a:hover{
+	text-decoration:underline;
+}
+.content-b{
+	float: left;
+	width:100%;
+}
+.Record{
+	width:275px;
+	margin:0 auto;
+	margin-top: 126px;
+}
+.Record div{
+	float: left;
+	padding:8px 13px;
+	border:1px solid #81511c;
+}
+.Record div a{
+	display: block;
+}
+.Record div:hover{
+	background: #b5791f;
+}
+.Record-l{
+	margin-right: 35px;
+}
+/* 蒙文 */
+.center1{
+	margin-top: 35px;
+}
+.content2{
+	width:100%;
+	height:752px;
+	background: url(../img/bg2.png);
+	padding:40px 85px 116px 85px;
+	position: relative;
+	-webkit-writing-mode: vertical-lr;
+	-ms-writing-mode: vertical-lr;
+	writing-mode: tb-lr;
+}
+.logo2-1{
+	color:#fff;
+}
+.topm{
+	float: right;
+	line-height: 70px;
+}
+.headerm{
+	width:930px;
+	margin:0 auto;
+	margin-bottom: 25px;
+}
+.logo-rm{
+	
+	position: absolute;
+	left:-40px;
+	top:0;
+	width:20px;
+	margin: 24px 0 0 10px
+}
+.logo-mm{
+	position: absolute;
+	left:-60px;
+	top:0;
+	width:40px;
+}
+.imgborder{
+	width:120px;
+	height: 85px;
+}
+.mm-mm{
+	width: 100%;
+    float: left;
+   	padding:10px 0 10px 0;
+    background: url(../img/bg--top.png) no-repeat;
+    background-size:100% 100%;
+}
+.mm-mm li{
+	width:12.5%;
+	float: left;
+	text-align: center;
+}

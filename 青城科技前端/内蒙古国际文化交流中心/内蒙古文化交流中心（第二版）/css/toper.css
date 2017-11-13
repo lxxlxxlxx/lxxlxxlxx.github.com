@@ -1,0 +1,73 @@
+.toper,.footer{
+	box-sizing: border-box;
+	width: 1000px;
+	margin: 0 auto;
+}
+.top_left{
+	float: left;
+	margin: 20px 0px 10px 0px;
+}
+.top_left img{
+	float: left;
+}
+.top_right{
+	float: right;
+}
+.titer{
+	display: block;
+	border-radius: 5px;
+	float: left;
+	font-weight: bold;
+	color: white;
+	padding: 7px 10px;
+	font-size: 22px;
+	background: #49765f;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.titer:hover{
+	text-decoration: none;
+	color: white;
+	opacity: 0.9;
+}
+.sousuo{
+	margin-top: 40px;	
+}
+.right_showtime{
+	float: right;
+	margin-right: -265px;
+	margin-top: 80px;
+}
+.news_title{
+	width: 100%;
+	border-top: 3px solid #006833;
+}
+.title{
+	border-bottom: 1px solid #eaeaea;
+	width: 1000px;
+	margin: 0 auto;
+	height: 45px;
+	line-height: 45px;
+}
+.title ul li a{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+.change{
+	border-radius: 3px;
+	background: url(../img/toper/title.jpg) no-repeat bottom;
+	background-color: #006833;
+}
+.title ul li{
+	padding: 0px 0px 7px 0px;
+	float: left;
+	text-align: center;
+	width: 100px;
+	color: white;
+	display: inline-block;
+}
+.title ul li a:hover{
+	text-decoration: none;
+	opacity: 0.9;
+}

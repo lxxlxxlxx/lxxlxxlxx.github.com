@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.locale" value="zh_CN" />
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="default" extends="struts-default">
+
+		<interceptors>
+			<!-- 安全信息过滤，用户session为空则强制退出 -->
+			<interceptor name="sessionCheck" class="com.Intertsi.util.SessionCheck">
+				<!-- 不需要拦截的方法 -->
+				<param name="excludeMethods">
+					login
+				</param>
+			</interceptor>
+			<!-- 拦截器栈，包含SESSION拦截和默认拦截器 -->
+			<interceptor-stack name="authInterceptor1">
+				<interceptor-ref name="sessionCheck" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="authInterceptor1"></default-interceptor-ref>
+
+		<!-- 注意global-results必须在global-exception-mappings前面 -->
+		<global-results>
+			<result name="reLogin">/login.jsp</result>
+			<result name="to_index">/index.jsp</result>
+		</global-results>
+		<global-exception-mappings> <!-- 此处定义的result对应于上面的global-results内 捕获所有异常 -->
+			<exception-mapping result="error" exception="java.lang.Exception">
+			</exception-mapping>
+			<exception-mapping result="errorSql" exception="java.sql.SQLException">
+			</exception-mapping>
+		</global-exception-mappings>
+
+		<action name="commonAction_*" class="commonAction" method="{1}">
+			<result name="signLoginList">/jsp/signLoginList.jsp</result>
+			<result name="to_addOrEditUser">/jsp/signLogin.jsp</result>
+			<result name="to_signLoginAction" type="redirectAction">commonAction_findAll</result>
+		</action>
+
+		<action name="khAction_*" class="khAction" method="{1}">
+			<result name="to_Kh_list">/jsp/khList.jsp</result>
+			<result name="to_addOrEditKh">/jsp/addAndEditKh.jsp</result>
+			<result name="to_Kh_listAction" type="redirectAction">khAction_findKhAll</result>
+		</action>
+
+		<action name="skAction_*" class="skAction" method="{1}">
+			<result name="to_sk_list">/jsp/skList.jsp</result>
+			<result name="to_addOrEditSk">/jsp/addAndEditSk.jsp</result>
+			<result name="to_sk_listAction" type="redirectAction">skAction_findSkAll</result>
+		</action>
+
+		<action name="sqAction_*" class="sqAction" method="{1}">
+			<result name="to_Sq_list">/jsp/sqList.jsp</result>
+			<result name="to_addOrEditSq">/jsp/addAndEditSq.jsp</result>
+			<result name="to_Sq_listAction" type="redirectAction">sqAction_findSqAll</result>
+		</action>
+
+		<action name="zcpgAction_*" class="zcpgAction" method="{1}">
+			<result name="to_Zcpg_list">/jsp/zcpgList.jsp</result>
+			<result name="to_addOrEditZcpg">/jsp/addAndEditZcpg.jsp</result>
+			<result name="to_Zcpg_listAction" type="redirectAction">zcpgAction_findZcpgAll</result>
+		</action>
+		
+		<action name="ckAction_*" class="ckAction" method="{1}">
+			<result name="to_Ck_list">/jsp/ckList.jsp</result>
+			<result name="to_addOrEditCk">/jsp/addAndEditCk.jsp</result>
+			<result name="to_Ck_listAction" type="redirectAction">ckAction_findCkAll</result>
+		</action>
+		
+
+	</package>
+</struts>    

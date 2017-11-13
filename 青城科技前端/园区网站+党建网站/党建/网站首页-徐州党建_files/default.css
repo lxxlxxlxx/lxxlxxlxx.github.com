@@ -1,0 +1,2079 @@
+﻿body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, table, th, td {
+	margin:0;
+	padding:0;
+}
+.thumb{
+	height:282px;
+	overflow: hidden;
+}
+.content .area left #feigongdj li {
+	text-decoration: none;
+	float: left;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+	font-style:normal;
+}
+ul, li {
+	list-style-type:none;
+}
+img {
+	border:none;
+}
+input, textarea, select {
+	font-family:inherit;
+	font-weight:inherit;
+	vertical-align:middle;
+
+}
+input,select{
+    vertical-align:middle;
+    height:18px;
+    line-height:18px;
+} 
+body {
+background-color: #FFF; 
+	color: #333;
+	font: 12px '宋体', Arial, Helvetica, sans-serif;
+}
+a {
+	color: #333;
+	text-decoration:none;
+	cursor: pointer;
+}
+a:hover {
+	color: #cc0000;
+	text-decoration:none;
+}
+.clear,.clear_all  {
+	clear:both;
+}
+.clear_all  {height:0px;line-height:0px;font-size:0px;}
+.clear:after,.clear_all:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.wrapper {
+	width:980px;background-color: #fff;
+	margin: 0px auto;
+	/* padding:0px 10px; */
+}
+.mtop10 {
+	margin-top:10px;
+}
+.ptop10 {background-color: #FFF; 
+	padding-top:10px;
+}
+.left, .fl {
+	float:left;
+}
+.right, .fr {
+	float:right;
+}
+span.missing_data {color:#ff0000;}
+
+.commonbutton
+{
+    height:auto;
+}
+/************网站顶部定义**************/
+#header {
+background:url(../网站首页-徐州党建_files/2008indexbg.png); background-repeat: no-repeat; background-position: center top; background-color: #FFF; 
+ }
+#toolsbar { height: 32px; line-height: 32px; width: 100%; }
+.search1 { width: 200px; height: 24px; margin-right: auto; margin-left: auto; }
+.search1 .input_on, .search1 .input_off, .search1 .input_move, .search1 .input_out { width: 132px; height: 24px; line-height: 24px; padding-left: 20px; font-size: 12px; color: #666666; background-image: url(../网站首页-徐州党建_files/search1.png); background-repeat: no-repeat; background-position: left top; background-color: transparent; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; display: inline-block; float: left; }
+.search1 .input_on, .search1 .input_move { }
+.search1 .submit { width: 47px; height: 24px; line-height: 24px; font-size: 12px; background-image: url(../网站首页-徐州党建_files/search1.png); background-repeat: no-repeat; background-position: right top; background-color: transparent; color: #FFF; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; display: inline-block; cursor: pointer; float: left; text-indent: -9999em; }
+
+#logo {
+	float:left;
+	width:360px;
+	padding-top:5px;
+}
+#logo img {
+	width:360px;
+	height:120px;
+	overflow:visible;
+	background-position: top;
+}
+/****************您现在的位置是*******************/
+.sitepath, .sitepath_allweb {
+	height:32px;
+	line-height:32px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -194px;
+	padding-left:32px;
+}
+.sitepath em, .sitepath_allweb em {
+	padding:0px 5px;
+}
+.sitepath a, .sitepath_allweb a {
+	color:#000;
+}
+.sitepath a:hover, .sitepath_allweb a:hover {
+	color:#cc0000;
+}
+.r_navigation {
+	height:23px;
+	line-height:23px;
+}
+.sitepath_allweb {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -490px;
+}
+
+/************** **************/
+.soft_form {
+	padding-top:10px;
+}
+/***********整站分页************/
+.class_page {
+	height:20px;
+	text-align:center;
+	padding:20px 0px;
+}
+
+.page_css,.class_page{text-align:center; padding:5px 0;  }
+.page_css a,.class_page a{display:inline-block;border:1px solid #a8c1ce; padding:3px 8px; color:#4a89a9;line-height:100%;}
+.page_css a:hover,.class_page a:hover{color:#fff;border:1px solid #4081A1;background:#62A1DF; }
+.page_css b a,.class_page b a{color:#fff;border:1px solid #4081A1;background:#62A1DF; }
+/*****搜索*******/
+.article_search {
+	height:40px;
+	line-height:40px;
+	padding:9px 0 9px 70px;
+	height:22px;
+	line-height:22px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -313px;
+	position:relative;
+}
+.article_search select {
+	margin:0px 3px;
+
+}
+.article_search input#keyword_PowerEasy,.article_search input#keyword {width:170px;}
+input.article_searchbutton {
+	display:inline-block;
+	border:none;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -293px -38px;
+	height:21px;
+	width:61px;
+
+}
+.article_search a {
+	display:inline-block;
+	height:20px;
+	width:80px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -365px -38px;
+	overflow:hidden;
+	text-indent:-9999em;
+	position:absolute;
+	top:11px;
+    left:550px;
+}
+.article_list h3  {
+	height:31px;
+	line-height:31px;
+	background:url(../网站首页-徐州党建_files/t8.png) no-repeat left top;
+	font-size:14px;
+	color:#000;
+border-right:1px solid #f3b02e;
+	padding-left:34px;
+	position:relative;
+}
+.article_list h3 em a {
+	color:#000;
+}
+.article_list ul {
+border-right:1px solid #f3b02e;
+border-left:1px solid #f3b02e;
+border-bottom:1px solid #f3b02e;
+	padding:40px 37px -7px 37px;
+}
+.article_list li {
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#666;
+	background:url(../网站首页-徐州党建_files/line.gif) repeat-x left bottom;
+}
+.article_list li span.datetime {
+	float:right;
+	padding-right:5px;
+}
+.article_list li a {
+	color:#333;
+	padding-left:20px;
+	background:url(../网站首页-徐州党建_files/icon4.gif) no-repeat left -29px;
+}
+#article_box img#more
+{
+    float:right;
+    margin:10px;
+}
+.article_list li a:hover {
+	color:#ae541f;
+	background:url(../网站首页-徐州党建_files/icon4.gif) no-repeat left 1px;
+}
+.article_list span.comment_link a
+{
+    background:none;
+}
+.article_list span.comment_link a:hover
+{
+    background:none;
+}
+span.missing_data{
+    float:left;
+    clear:both;
+}
+#main_search {
+	line-height:150%;
+	
+}
+#main_search ul {
+	padding:0px;
+	background:none;
+	border:none;
+}
+#main_search li {
+	float:none;
+	width:100%;
+	text-align:left;
+	height:24px;
+	background:none;
+	font-size:12px;
+}
+#main_search li{margin-top:10px}
+#main_search li input#Submit {margin-left:260px;margin-top:2px;}
+/*****搜索结束*******/
+
+/*************tag列表*************/
+#Tag_list {
+	height:32px;
+	line-height:32px;
+	margin-bottom:8px;
+	position:relative;
+	background-image: url(../网站首页-徐州党建_files/back.gif);
+	background-repeat: no-repeat;
+	background-position: left -736px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Tag_list ul {padding-left:90px;}
+#Tag_list li {display:inline;}
+#Tag_list li a {color:#77807d;background:url(../网站首页-徐州党建_files/tag_list.gif) no-repeat right center;height:32px;line-height:32px;display:inline-block;padding-right:5px;} 
+#Tag_list li a:hover {color:#cc0000;text-decoration:underline;}
+#Tag_list strong {color:#000;width:79px;height:19px;line-height:19px;display:inline-block;background:url(../网站首页-徐州党建_files/back.gif) no-repeat  -735px -95px;padding-left:3px;color:#fff;padding-right:8px;position:absolute;	top:7px;	left:5px;}
+#Tag_list  span {float:right;margin-right:30px;display:inline;}
+.all_tag {padding:13px;	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;}
+	.all_tag span {font-size:14px;padding-right:5px;line-height:23px;}
+	.all_tag span a {color:#333;}
+	.all_tag span a:hover {color:#cc0000;}
+#tag li span {
+	float:none;
+	padding:0px 8px;
+}
+#tag li a {
+	background:none;
+	padding-left:0px;
+}
+/************网站顶部右侧**************/
+.web_tool {
+	float:right;
+	width:520px;
+	text-align:right;
+	height:26px;
+    position:relative;
+}
+.web_tip {
+	height:26px;
+	line-height:26px;
+	float: right;
+	margin-top: 27px;
+}
+.web_tip a {
+	height:21px;
+	line-height:21px;
+	display:inline-block;
+	color:#000;
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left 3px;
+	margin-right: 10px;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 17px;
+}
+.web_tip a.wap {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat 1px -16px;
+	padding-left:17px;
+	padding-right:7px;
+}
+.web_tip a.fav {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left -36px;
+	padding-right:0px;
+}
+.web_tip a.home {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left -55px;
+	padding-right:0px;
+	padding-left:19px;
+}
+.web_tip a.rss {
+
+	padding-right:5px;
+}
+.web_tip a.ask {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left -84px;
+}
+.web_tip a.searches {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left -111px;
+}
+.web_tip a.reg {
+	background:url(../网站首页-徐州党建_files/tool.gif) no-repeat left -137px;
+	padding-right:8px;
+
+}
+.web_tip a:hover {
+	color:#000000;
+}
+/******网站地图*******/
+.sitemap h5 {height:30px;line-height:30px;font-size:13px;clear:both;border-bottom:1px solid #dcdcdc;}
+.sitemap h5 a {color:#333;border-bottom:3px solid #6ccbf7;height:27px;line-height:27px;display:inline-block;padding:0px 15px 0px 10px;}
+.sitemap h5 a:hover {color:#cc0000;}
+.sitemap ul {padding:10px 0px;padding-left:75px;}
+.sitemap li {height:23px;line-height:23px;float:left;padding:0px 10px;}
+.sitemap li a {color:#333;}
+.sitemap li a:hover {color:#cc0000;text-decoration:underline;}
+.sitemap_list {margin:8px 0px;}
+/************顶部搜索**************/
+.search {
+	height:25px;
+	margin-top:18px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -595px top;
+	width:224px;
+	float:right;
+	text-align:left;
+}
+.search input.keyword {
+	height:22px;
+	line-height:22px;
+	background:none;
+	border:none;
+	width:190px;
+	padding-left:5px;
+}
+.search input.submit {
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+/*************全模型搜索*************/
+.top{ }
+
+.full_model_search {
+	height:26px;
+	width:527px;
+	background:url(../网站首页-徐州党建_files/back.gif) left -778px;
+	position:absolute;
+	right:0px;
+	text-align:left;
+	padding-left:5px;
+	padding-top:4px;
+	top:-39px;
+}
+.full_model_search input.model_search {width:253px;padding-top:3px;height:15px;border:none;background:none;padding-left:55px;color:#c0c0c0;}
+.full_model_search input.model_search_click {width:67px;padding-top:3px;height:22px;background:url(../网站首页-徐州党建_files/back.gif) no-repeat  -735px -118px;border:none;margin-left:7px;}
+.full_model_search  a {color:#333;padding:0px 8px;}
+.full_model_search  a.model_search_all {background:url(../网站首页-徐州党建_files/model_search.gif) no-repeat left center;height:30px;}
+.full_model_search  a:hover {color:#cc0000;text-decoration:underline;}
+/*************下拉选项***********/
+.model_list,.model_project {width:50px;position:absolute;
+	top:-15px;
+	left:435px;z-index:3;}
+.model_project {z-index:9;top:-30px;left:427px;}
+.model_project a {color:#8a8d8c;padding-right:15px;background:url(../网站首页-徐州党建_files/ico_down.gif) no-repeat right center;}
+.model_project a:hover{color:#cc0000;}
+	.model_list  {border:1px solid #ccc;background:#fff;border-top:none;display:none}
+		.model_list ul {height:auto!important;min-height:80px;height:80px;padding:0px;}
+		.model_list  li {text-align:left;}
+		.model_list  li a {display:block;height:24px;line-height:24px;border-top:1px solid #fff;border-bottom:1px solid #fff;color:#333;padding-left:5px;}
+		.model_list  li a:hover {color:#000;background:#f0f0f0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+/************网站菜单*************/
+.menu {
+ height: 68px; background-image: url(../网站首页-徐州党建_files/m5_bg.png); background-repeat: repeat-x; background-position: left top;
+}
+#menubox {
+	height:38px;
+	font-size:14px;
+}
+#menubox li {
+	width:11%;
+	float:left;
+	font-weight:bold;
+	color:#fff;
+background-image: url(../网站首页-徐州党建_files/m5_spe.png); background-repeat: no-repeat; background-position:right 0px; 
+	text-align:center;
+	padding-left:0px;
+	cursor: pointer;
+	height:38px;
+	line-height:38px;
+}
+
+#menubox li a {
+	color:#fff;
+	cursor: pointer;
+	display:inline-block;
+}
+#menubox li a:hover {
+	color:#f90;
+}
+#menubox li a span {
+
+	padding-left:13px;
+
+}
+#menubox li a em {
+	padding-right:13px;
+}
+#menubox ul {
+	padding-left:15px;
+	height:38px;
+}
+#menubox li.current {
+	color:#f90;
+}
+#menubox li.current a {
+	color:#f90;
+	display:inline-block;
+	text-align:center;
+}
+#menubox li.current span, #menubox li.current span em {
+	display:inline-block;
+	height:38px;
+	line-height:38px;
+}
+#menubox li.current a:hover {
+	color:#fff;
+}
+#menubox li.current span em {
+}
+.sub_menu {
+	clear:both;
+	height:31px;
+	
+}
+.sub_center {
+	padding-left:20px;
+	color:#fff;
+}
+.sub_center span {
+	float:right;
+	padding-right:10px;
+}
+.sub_center ul {padding-top:10px;}
+.sub_center li {
+	float:left;
+	height:28px;
+	line-height:28px;
+}
+.sub_center li a {
+	color:#000;
+	margin:0px 7px;
+	padding-left:8px;
+	background:url(../网站首页-徐州党建_files/icon.gif) no-repeat left center;
+}
+.sub_center li a.current {color:#fff;padding:5px;background:#1b71a4;}
+.sub_center li a.current:hover {color:#ffff00;text-decoration:underline;}
+.sub_center li a:hover {
+	color:#cc0000;
+}
+#menu_list_1 {
+	padding-left:105px;
+}
+
+
+/**********网站侧栏开始**************/
+.sidebar {
+	float:right;
+	width:240px;
+}
+.notice h3, .user h3, .vote h3, .statistics h3, .month_up h3, .month_tip h3, .subnav h3, .video_category h3 {
+	height:34px;
+	line-height:34px;
+	background:url(../网站首页-徐州党建_files/1areabtbj.jpg) no-repeat left top;
+	font-size:14px;
+	color:#C01920;
+	padding-left:28px;
+}
+.notice h3 img {margin-top:10px;float:right;padding-right:5px;}
+.notice ul, .month_up ul, .month_tip ul, .photo_list ul, .soft_list ul, .video_list ul, .video_category ul {
+	padding:4px 8px 6px 12px;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd; 
+	margin-bottom: 10px;
+}
+.subnav ul {
+	padding:15px 20px;
+	border:1px solid #dddddd;
+ 
+}
+.mail ul {	height:auto!important;
+	min-height:40px;
+	height:40px;}
+.notice li, .month_up li, .month_tip li {
+	height:24px;
+	line-height:24px;
+	padding-left:10px;
+	background:url(../网站首页-徐州党建_files/icon1.gif) no-repeat left center;
+}
+
+.notice li a, .month_tip li a, .month_up li a {
+	color:#313534;
+}
+.notice li a:hover, .month_tip li a:hover, .month_up li a:hover {
+	color:#cc0000;
+}
+ 
+.month_tip ul {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -975px -250px;
+}
+.month_tip li {
+	padding-left:15px;
+	background:none;
+	height:25px;
+	line-height:25px;
+}
+/*********网站内容块********/
+.content {
+	float:left;
+	width:730px;
+	overflow:hidden;
+}
+.news {
+height: 30px; line-height: 30px; position: relative;
+}
+.news1 {
+	height:10px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -89px;
+}
+.news ul {
+
+}
+.news li {
+       width: 94px;
+       margin-right: 4px; 
+       float: left; cursor: pointer; text-align: center; background-image: url(../网站首页-徐州党建_files/tab1.png); background-repeat: no-repeat; background-position: left top; 
+}
+.news li a {
+ color: #666; font-size: 14px; font-weight: normal;
+}
+.news li a:hover, .news li.on a {
+  color: #FFFF00; font-weight: bold;
+}
+.news li.on {
+background-image: url(../网站首页-徐州党建_files/tab1.png); background-repeat: no-repeat; background-position: right top; 
+}
+.news_list {
+background-color: #FFF; border: 1px solid #ddd; padding-top: 19px; padding-right: 10px; padding-bottom: 19px; padding-left: 10px;
+}
+.news_list1 {
+	background:url(../网站首页-徐州党建_files/news_dd.gif) repeat-y left top;
+	padding-bottom:0px;
+	height:315px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.news_list_bottom {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -128px;
+	height:10px;
+	line-height:10px;
+	font-size:0px;
+}
+.news_list_01 {
+	float:left;
+	width:450px;
+}
+.news_list_03 {
+	float:left;
+	width:400px;
+	padding-left:10px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.head_news {
+	padding-bottom:10px;
+}
+.news_list_03 ul {
+	padding:10px;
+}
+
+.head_news h3 {
+	font-size:24px;
+	line-height:140%;
+	text-align:center;
+}
+.head_news h3 a {
+	color:#ff0000;
+}
+.head_news h3 a:hover {
+	color:#000;
+}
+.head_news p {
+	padding:5px 0px;
+	line-height:170%;
+	text-indent:20px;
+	padding-bottom:10px;
+	background:url(../网站首页-徐州党建_files/line.gif) repeat-x left bottom;
+	color:#666;
+}
+.news_list_01 li {
+	height:23px;
+	line-height:24px;
+	padding-left:15px;
+	background:url(../网站首页-徐州党建_files/icon2.gif) no-repeat left center;
+	color:#999999;
+	overflow:hidden;
+}
+.news_list_03 li {
+	height:23px;
+	line-height:24px;
+	padding-left:15px;
+	background:url(../网站首页-徐州党建_files/icon2.gif) no-repeat left center;
+	color:#999999;
+	float:left;
+	margin-right: 5px;
+	margin-left: 5px;	
+}
+.news_list_02 li {
+	height:23px;
+	line-height:24px;
+	padding-left:15px;
+	background:url(../网站首页-徐州党建_files/icon2.gif) no-repeat left center;
+	color:#999999;
+	
+}
+
+.news_list_01 li span.datetime {
+	float:right;
+}
+.news_list_03 li span.datetime {
+	float:right;
+}
+.news_list_02 li span.datetime {
+	float:right;
+}
+.news_list_01 li a {
+	color:#343434;
+	}
+.news_list_03 li a {
+	color:#343434;
+	}
+.news_list_02 li a {
+	color:#343434;
+	
+}
+.news_list_01 li a:hover {
+	color:#cc0000;
+}
+.news_list_03 li a:hover {
+	color:#cc0000;
+}
+.news_list_02 li a:hover {
+	color:#cc0000;
+}
+/*******右侧FLASH新闻*******/
+.news_flash {
+	width:226px;
+	padding:0px;
+	border:1px solid #e5e5e5;
+	margin-top:20px;
+	margin-right:20px;
+	display:inline;
+	float: right;	
+}
+.news_flash1 {
+	float:right;
+	width:709px;
+	padding:0px;
+	border:1px solid #e5e5e5;
+	margin-top:0px;
+	margin-right:0px;
+	display:inline;
+}
+
+
+
+/***********网站中部二开始***********/
+
+
+
+#author_article_list div
+{
+    margin-top:12px;    
+}
+
+
+/*****登录*********/
+.user_info {
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	padding:5px;
+	height:183px;
+	background:#fff
+}
+.user_login ul {
+	padding:5px;
+}
+.user_login li {
+	height:27px;
+	line-height:27px;
+    margin:2px 0px;
+}
+.loginedinfo li {height:21px;line-height:21px;}
+.user_login li.reg_user {height:27px;line-height:27px;padding:3px 0px 6px 0px;}
+.user_login li.save {padding-left:45px;}
+.user_login li.reg {padding-top:5px;background:url(../网站首页-徐州党建_files/min_line.gif) no-repeat center top;text-align:center;}
+.user_login li.reg a {color:#333;text-decoration:underline;}
+.user_login li.reg a:hover {color:#f87608;text-decoration:underline;}
+.user_login li.save a{padding-left:10px;}
+
+.user_login li.save input {margin-right:5px;}
+.user_login li input.inputtext {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -64px;
+	border:none;
+	width:133px;
+	height:20px;
+	line-height:20px;
+	padding-left:5px;
+	font-size:12px;font-family:Arial;
+}
+
+.user_login li input#validationCode2 {width:58px!important;background:url(../网站首页-徐州党建_files/back.gif) no-repeat -708px -65px;font-size:11px;font-family:Arial;}
+.user_login li select {
+	width:138px;
+}
+.user_login li img {
+	margin-left:5px;
+}
+/***********会员loading***************/
+
+.user_login li.reg_user, .vote_content li.vote_check {
+	position:relative;
+}
+.user_login li input.user_login_submit, .vote_content li.vote_check input {
+	width:66px;
+	height:22px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -72px -38px;
+	overflow:hidden;
+	border:none;
+	position:absolute;
+	top:7px;
+	left:20px;
+	cursor: pointer;
+}
+.user_login li input.user_login_submit {top:5px;left:45px;}
+.user_login li.forget {
+	text-align:center;
+	padding-top:5px;
+}
+.user_login li a {
+	color:#000;
+	padding:0px 10px;
+}
+.user_login li a:hover {
+	color:#cc0000;
+}
+
+/******会员登录后CSS******/
+.u_login {
+	padding:5px;
+	line-height:180%;
+}
+
+/************图片工具栏*************/
+.pic_tool ul {
+	border:3px solid #C01920;
+	padding-left:5px;
+}
+.pic_tool li {
+	width:190px;
+	background:url(../网站首页-徐州党建_files/t5.png) no-repeat left top;
+	height:28px;
+	padding-left:30px;
+	line-height:28px;
+	margin:4px 0px;
+}
+.pic_tool li a {
+	font-size:14px;
+        font-weight: bold;
+	color:#BB0500;
+}
+/************网站调查*************/
+.vote_content, .statistics_content {
+	border:1px solid #ddd;
+}
+.vote_content h4 {
+	font-size:12px;
+	font-weight:normal;
+	color:#4093cb;
+	height:27px;
+	line-height:27px;
+	padding-left:10px;
+	padding-top:8px;
+}
+.vote_content ul {
+	padding-left:10px;
+}
+.vote_content li {
+	height:22px;
+	line-height:22px;
+}
+.vote_content li input {
+	margin-right:5px;
+	vertical-align:middle;
+	margin-top:-3px;
+}
+.vote_content li.vote_check {
+	height:24px;
+	line-height:24px;
+	text-align:center;
+	padding-top:10px;
+}
+.vote_content li.vote_check input {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -143px -38px;
+}
+.vote_content li.vote_check input#ShowVote {
+	left:106px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -215px -38px;
+}
+/****************网站统计****************/
+ .statistics_content {
+	line-height:26px;
+	padding-top:8px;
+	padding-left:10px;
+}
+*html .statistics_content {
+	padding-top:8px;
+	line-height:24px;
+}
+.statistics_content a {
+	color:#ae541f;
+}
+.statistics_content a:hover {
+	color:#cc0000;
+}
+/************首页模块新闻列表*****************/
+.area {
+	width:360px;
+	margin-top:10px;
+}
+.area h3 {
+	height:34px;
+	line-height:34px;
+	background:url(../网站首页-徐州党建_files/1areabtbj.jpg) no-repeat left top;
+	font-size:14px;
+	color:#C01920;
+	position:relative;
+}
+/*******标题自适应***********/
+.area h3 span {
+ 
+	display:inline-block;
+	padding-left:35px;
+}
+.area h3 em {
+ 
+	padding-right:35px;
+	color:#C01920;
+	display:inline-block;
+}
+.area h3 em a {
+	color:#C01920;
+}
+.area h3 em a:hover {
+	color:#ffff00;
+}
+
+.area h3 img {
+	position:absolute;
+	top:10px;
+	left:320px;
+}
+.area ul {
+	border-left:1px solid #e1e1e1;
+	border-right:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	background:url(../网站首页-徐州党建_files/area_back.gif) repeat-x left top;
+	padding:10px;
+	height:auto!important;
+	min-height:187px;
+	height:187px;
+	margin-bottom: 19px;
+}
+.area li {
+	height:23px;
+	line-height:23px;
+	padding-left:8px;
+	background:url(../网站首页-徐州党建_files/icon3.gif) no-repeat left center;
+	color:#999999;
+	position:relative;
+}
+.area li a {
+	color:#313534;
+}
+.area li a:hover {
+	color:#cc0000;
+}
+.area li span.datetime{
+position:absolute;
+	top:0px;
+	right:5px;
+}
+.underline_area {
+	height:5px;
+	line-height:5px;
+	font-size:0px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -141px -79px;
+}
+.area_ad img {
+	border:1px solid #cfd8df;
+}
+/******推荐信息**********/
+.summary ul {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -974px 15px;
+}
+.summary li {
+	background:none;
+	padding-left:25px;
+}
+/******栏目分类**********/
+.subnav li {
+	margin-top:6px;
+}
+.subnav li a {
+	height:26px;
+	line-height:26px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -505px -61px;
+	width:165px;
+	display:inline-block;
+	padding-left:33px;
+	color:#333;
+}
+.subnav li a:hover, .subnav li.class_on a {
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat -505px -32px;
+	color:#ae541f;
+}
+/**************各节点首页下方推荐图文开始****************/
+
+.pic_article h3 {
+	height:37px;
+	line-height:37px;
+	background:url(../网站首页-徐州党建_files/pic_articlebj.jpg) no-repeat left top;
+	font-size:14px;
+	color:#FDE176;
+	padding-left:50px;
+}
+.pic_article .bd {
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	padding:10px 8px;
+}
+.pic_article li {
+	width:24%;
+	text-align:center;
+	float:left;
+	overflow:hidden;
+}
+.underline_left {
+	height:7px;
+	line-height:7px;
+	font-size:0px;
+	background:url(../网站首页-徐州党建_files/back.gif) no-repeat left -269px;
+}
+.pic_article li a {
+	color:#333;
+}
+.pic_article li a:hover {
+	color:#cc0000;
+}
+.pic_article li img {
+	width:150px;
+	height:113px;
+	padding:2px;
+	border:1px solid #d3d8dc;
+	background:#ebf0f4;
+	overflow:hidden;
+}
+.pic_article li span {
+	display:block;
+	line-height:19px;
+	padding:0px 10px;
+}
+/******视频中心*****/
+.area ul.tv_pictrue {
+	height:102px;
+	min-height:103px;
+}
+.tv_pictrue li {
+	background:none;
+	padding:0px;
+	height:103px;
+}
+.tv_pictrue li .tv_u_thumb {
+	float:left;
+	height:102px;
+	width:135px;
+}
+.tv_pictrue li .tv_u_thumb img {
+	width:120px;
+	height:90px;
+	padding:2px;
+	background:#eceff4;
+	border:2px solid #cfd8df;
+}
+.tv_u_thumb_title {
+	float:right;
+	width:195px;
+}
+.tv_u_thumb_title h4 {
+	font-size:12px;
+	color:#666;
+}
+.tv_u_thumb_title h4 a {
+	color:#666666;
+}
+.tv_u_thumb_title h4 a:hover {
+	color:#cc0000;
+}
+.tv_u_thumb_title p {
+	text-indent:20px;
+	color:#666;
+}
+.area ul.tv_text {
+	padding:10px 0px 0px 10px;
+	height:74px;
+	min-height:74px;
+	background:none;
+}
+.area ul.tv_text li {
+	float:left;
+	width:46%;
+}
+/**************首页图片****************/
+.scroll_picture h3, .friend_link h3 {
+	height:31px;
+	line-height:31px;
+	background:url(../网站首页-徐州党建_files/t8.png) no-repeat left top;
+	font-size:14px;
+	color:#000;
+border-right:1px solid #f3b02e;
+	padding-left:34px;
+	position:relative;
+}
+.scroll_picture h3 img, .friend_link h3 img {
+	position:absolute;
+	top:10px;
+	left:930px;
+}
+.scroll_picture_list, .friend_content {
+  border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid; border-right-color: #f3b02e; border-left-color: #f3b02e; background-color: #FFF; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #f3b02e; 
+	padding:25px 24px 0px 12px;
+}
+.scroll_picture_list ul {
+	height:auto!Important;
+	min-height:160px;
+	height:160px;
+	clear:both;
+}
+.scroll_picture_list li {
+	width:168px;
+	overflow:hidden;
+	text-align:center;
+	height:153px;
+	margin-left:16px;
+	display:inline;
+	float:left;
+}
+.scroll_picture_list li img {
+	width:160px;
+	height:120px;
+	overflow:hidden;
+	padding:2px;
+	border:1px solid #cfd8df;
+}
+.scroll_picture_list li span {
+	display:block;
+	line-height:19px;
+	margin-top:5px;
+	padding:0px 5px;
+}
+.scroll_picture_list li a {
+	color:#333333;
+}
+.scroll_picture_list li a:hover {
+	color:#cc0000;
+}
+.underline_picture {
+	height:7px;
+	line-height:7px;
+	background-image: url(../网站首页-徐州党建_files/back.gif);
+	background-repeat: no-repeat;
+	background-position: left -182px;
+}
+/******友情链接********/
+.friend_content {
+	padding:15px 0px 0px 10px;
+	height:auto!important;
+	height:65px;
+	min-height:65px;
+}
+.friend_pic {
+height:auto!important;
+min-height:40px;
+height:40px;
+padding-bottom:5px;
+}
+.friend_pic li {
+	float:left;
+	width:150px;
+	height:37px;
+	overflow:hidden;
+	margin:5px 0px;
+	margin-left:10px;
+	display:inline;
+
+}
+.friend_pic li img{width:138px;height:31px;overflow:hidden;padding:2px;border:1px solid #f0f0f0;}
+.friend_text {
+	padding:10px;
+}
+.friend_text li {
+	float:left;
+	margin-right:10px;
+	color:#666;
+	line-height:22px;
+}
+.friend_text {
+	padding:10px 0px 0px 0px;
+}
+.friend_text li 
+{
+    margin:5px 0 5px 10px;
+	line-height:21px;
+	width:96px;
+	overflow:hidden;
+	height:21px;
+}
+.friend_text li a {
+	color:#666;
+}
+.friend_text li a:hover {
+	color:#cc0000;
+}
+/*******网站底部定义开始*******/
+#footer {
+	height:215px;
+	background:url(../网站首页-徐州党建_files/bg_footer.png) repeat-x left top;
+	margin-top:10px;
+}
+.service {
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#fff;
+}
+.service a {
+	color:#fff;
+}
+.service a:hover {
+	color:#cc0000;
+}
+.copyright {
+	text-align:center;
+	line-height:180%;
+	padding-top:10px;
+	font-family: Arial;
+	color:#444;
+}
+/*********版权信息页与关于我们页面样式定义**********/
+.copyright_list {
+	padding:30px;
+}
+.copyright_list h1 {
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:16px;
+}
+.copyright_list p {
+	line-height:270%;
+	font-size:14px;
+	color:#333;
+}
+/**********弹出公告**************/
+.popping_news {
+	width:590px;
+	height:390px;
+	border:6px solid #1e74a8;
+	background:#fff;
+	padding:2px;
+	position:relative;
+}
+.popping_contant {
+	background:url(../网站首页-徐州党建_files/notice_back.gif) repeat-x center top;
+	height:380px;
+	padding:0px 30px;
+	color:#333333;
+	padding-top:15px;
+}
+.popping_contant h2 {
+	font-size:18px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-family:"微软雅黑";
+	font-weight:normal;
+}
+.popping_info {
+	height:31px;
+	line-height:31px;
+	text-align:center;
+	background:#fcfcfc url(../网站首页-徐州党建_files/notice_line.gif) repeat-x left top;
+	margin:15px 0px;
+}
+.popping_list {
+	line-height:180%;
+	font-size:12px;
+	padding:5px 0px;
+}
+.popping_list p {
+	text-indent:20px;
+	word-wrap:break-word;
+	word-break:normal;
+}
+img.close_popping {
+	position:absolute;
+	cursor: pointer;
+	top:7px;
+	left:567px;
+
+}
+	
+/*******匿名投稿*******/
+.anonymouscontent_top
+{
+    border-color:#E2E2E2;
+    border-right:1px solid #E2E2E2;
+    border-style:solid;
+    border-width:1px;
+    height:59px; 
+}
+.anonymouscontent_top h3 {
+    font-size:18px;
+    padding-left:35px;
+    padding-top:23px;
+}
+/******弹出登录控制*****************/
+.quick_login {top:32%!important;}
+.quick_login_content {padding:5px;border:5px solid  #2185c1;background:#efefef;width:500px;height:195px;margin:0 auto;}
+.quick_login_content h3 {height:31px;line-height:31px;font-size:14px;color:#0f3b7c;padding-left:14px;}
+.quick_login_content h3  img {float:right;display:inline;margin-top:3px;cursor: pointer;width:15px;height:13px;display:inine-block;}
+.quick_login_info {float:left;width:270px;background:url(../网站首页-徐州党建_files/login_line.gif) no-repeat 250px center;}
+.quick_login_info  ul {padding:7px 0px 7px 14px;}
+.quick_login_info li {height:24px;line-height:24px;margin:5px 0px;}
+.quick_login_info li  input {border:1px solid #b6b4b4;background:#fefefe;color:#333;height:13px;padding:3px 0px 3px 3px;font-family:Arial;font-size:12px;}
+.quick_login_info li.check {cursor: pointer;height:16px;line-height:16px;padding-top:5px;}
+.quick_login_info li.check span {}
+.quick_login_info li.check input{border:none;padding:0px 1px;background:none;margin-top:-5px;margin-right:5px;_margin-top:0px;}
+*+html .quick_login_info li.check input {margin-top:0px;}
+.quick_login_info li label {height:24px;}
+.quick_login_info li  input#validateCode {width:52px;}
+.quick_login_info li  img{cursor: pointer;padding-left:5px;padding-top:1px;}
+ a.login_poping {background:none;padding-left:0px;padding-right:0px;}
+
+.quick_login_info li.login img,.quick_login_info li.check {margin-bottom:8px;}
+
+.reg_info {float:right;width:220px;}
+.reg_info ul {padding-top:10px;}
+.reg_info li {height:31px;line-height:31px;font-size:14px;color:#747474;}
+
+.reg_info li  a {color:#cc0000;text-decoration:underline;}
+.reg_info li  a:hover {color:#333;text-decoration:underline;}
+/*********弹出会员下拉显示详细信息********/
+.web_tip a span {color:#ec260b;font-weight:bold;padding-right:5px;}
+#loginedUserInfo {left:100px;width:146px;text-align:left;background:#f3f3f3;position: absolute;z-index:3;background:url(../网站首页-徐州党建_files/popping.gif) no-repeat  left bottom;}
+#loginedUserInfo ul {padding:5px;padding-top:0px;}
+#loginedUserInfo  li {height:20px;line-height:20px;padding-left:10px;}
+#loginedUserInfo  li.user_out {background:url(../网站首页-徐州党建_files/popping_line.gif) no-repeat center bottom;padding-bottom:3px;}
+#loginedUserInfo  li span {padding:0px 5px;}
+#loginedUserInfo  li.user_out a {padding-left:0px;}
+#loginedUserInfo  li.money {padding-top:3px;}
+#loginedUserInfo  li a {color:#333;}
+#loginedUserInfo  li a:hover {color:#cc0000;text-decoration:underline;}
+/************心情控制***********/
+.article_mood {border:4px solid #ddd;padding:10px;padding-top:20px;margin-bottom:10px;}
+/********邮件订阅*********/
+#MailSubscribes h2 {font-size:12px;font-weight:normal;line-height:19px;padding:2px 0px;}
+#MailSubscribes h2 input {margin-right:3px;vertical-align:-2px;_vertical-align:-3px;}
+#MailSubscribes label {margin-right:2px;}
+#MailSubscribes h4 {line-height:24px;height:24px;font-size:12px;font-weight:normal;}
+#MailSubscribesControl input.inputtext {border:1px solid #ccc;font-size:11px;padding:2px 3px;font-family:Arial;margin-top:5px;}
+#MailSubscribesControl input.inputbutton {width:54px;height:20px;line-height:20px;text-align:center;background:url(../网站首页-徐州党建_files/MailSubscribes.gif) no-repeat left center;border:none;cursor: pointer;margin-top:5px;}
+
+/* calendar root element */
+#calroot *{
+    margin:0;
+    padding:0;
+    background:none;
+}
+
+#calroot span{
+    line-height:normal;
+}
+
+#calroot {
+	margin-top:-1px;
+	width:198px;
+	padding:2px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-box-shadow: 0 0 15px #666;
+	-webkit-box-shadow: 0 0 15px #666;	
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calhead {	
+	padding:2px 0;
+	height:22px;
+} 
+
+#caltitle {
+	font-size:14px;
+	color:#0150D1;	
+	float:left;
+	text-align:center;
+	width:155px;
+	line-height:20px;
+	text-shadow:0 1px 0 #ddd;
+}
+
+#calnext, #calprev {
+	display:block;
+	width:20px;
+	height:20px;
+	background:transparent url(prev.gif) no-repeat scroll center center;
+	float:left;
+	cursor:pointer;
+}
+
+#calnext {
+	background-image:url(next.gif);
+	float:right;
+}
+
+#calprev.caldisabled, #calnext.caldisabled {
+	visibility:hidden;	
+}
+
+/* names of the days */
+#caldays {
+	height:14px;
+	border-bottom:1px solid #ddd;
+}
+
+#caldays span {
+	display:block;
+	float:left;
+	width:28px;
+	text-align:center;
+}
+
+/* container for weeks */
+#calweeks {
+	background-color:#fff;
+	margin-top:4px;
+}
+
+/* single week */
+#calroot .calweek {
+	clear:left;
+	height:22px;
+}
+
+/* single day */
+#calroot .calweek a {
+	display:block;
+	float:left;
+	width:27px;
+	height:20px;
+	text-decoration:none;
+	margin-left:1px;
+	text-align:center;
+	line-height:20px;
+	color:#666;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px; 		
+} 
+
+/* different states */
+#calroot .calweek a:hover, #calroot .calfocus {
+	background-color:#ddd;
+}
+
+/* sunday */
+#calroot a.calsun {
+	color:red;		
+}
+
+/* offmonth day */
+#calroot a.caloff {
+	color:#ccc;		
+}
+
+#calroot a.caloff:hover {
+	background-color:rgb(245, 245, 250);		
+}
+
+
+/* unselecteble day */
+#calroot a.caldisabled {
+	background-color:#efefef !important;
+	color:#ccc	!important;
+	cursor:default;
+}
+
+/* current day */
+#calroot #calcurrent {
+	background-color:#498CE2;
+	color:#fff;
+}
+
+/* today */
+#calroot #caltoday {
+	background-color:#333;
+	color:#fff;
+}
+
+.article_page li.next {
+    background:url("images/icon7.gif") no-repeat scroll left center transparent;
+}
+
+/**********文字按钮********/
+.input_button, .input_button_ten, .input_button_two,.input_button_three,.input_button_four,.input_button_five,.input_button_six,.input_button_seven,.input_button_eight,.overlay_control_button
+{
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left 0px;
+    height: 23px;
+    line-height: 23px;
+    width: 65px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0px 3px;
+}
+.input_button_two
+{
+    width: 42px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -30px;
+}
+.input_button_three
+{
+    width: 53px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -89px;
+}
+.input_button_four
+{
+    width: 65px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left 0px;
+}
+.input_button_five
+{
+    width: 78px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -116px;
+}
+.input_button_six
+{
+    width: 89px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -142px;
+}
+.input_button_seven
+{
+    width: 102px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -170px;
+}
+.input_button_eight
+{
+    width: 114px;
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -197px;
+}
+.input_button_ten
+{
+    background: #fff url(../网站首页-徐州党建_files/input_button.gif) no-repeat left -62px;
+    width: 150px;
+}
+/*********提交按钮***********/
+.submit_button
+{
+    height: 26px;
+    line-height: 26px;
+    padding: 0px 5px;
+    background: url(../网站首页-徐州党建_files/button.gif) repeat-x left bottom;
+    border: 1px solid #d9d291;
+    font-weight: bold;
+    font-size: 13px;
+    color: #222222;
+    cursor: pointer;
+    vertical-align: center;
+}
+.submit_button_two,.submit_button_three,.submit_button_four,.submit_button_five,.submit_button_six,.submit_button_seven,.submit_button_eight,.submit_button_nine,.submit_button_ten
+{
+    height: 26px;
+    line-height: 26px;
+    padding: 0px 5px;
+    font-size: 13px;
+    background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left 0px;
+    width: 44px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 3px;
+}
+.submit_button_three
+{
+	width: 69px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -31px;
+}
+.submit_button_four
+{
+	width: 80px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -62px;
+}
+.submit_button_five
+{
+	width: 91px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -92px;
+}
+.submit_button_six
+{
+	width: 102px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -123px;
+}
+.submit_button_seven
+{
+	width: 113px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -155px;
+}
+.submit_button_eight
+{
+	width: 125px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -186px;
+}
+.submit_button_nine
+{
+	width: 137px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -218px;
+}
+.submit_button_ten
+{
+	width: 148px;
+	background: #fff url(../网站首页-徐州党建_files/submit_button.gif) no-repeat left -249px;
+}
+/********文本框*************/
+.inputxt
+{
+    color: #878787;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px 2px;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #9b9b9b;
+    border-right: 1px solid #cccccc;
+    vertical-align: center;
+}
+.inputxt, select, .input_button
+{
+    display: inline;
+    vertical-align: middle;
+}
+/*******select定义********/
+select
+{
+    padding: 2px 1px 1px 2px;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #9b9b9b;
+    border-left: 1px solid #9b9b9b;
+    font-size: 13px;
+    font-family: "Arial";
+    line-height: 100%;
+    height: 22px;
+    height: 22px\9; *height:23px;
+vertical-align:-4px;
+vertical-align:-3px\9;
+}
+textarea
+{
+    border: 1px solid #c0c0c0;
+    vertical-align: middle;
+}
+/***********文件上传***********/
+.type-file-box
+{
+    position: relative;
+    width: 260px;
+}
+.type-file-text
+{
+    height: 22px;
+    border: 1px solid #ccc;
+    width: 180px;
+}
+.type-file-button
+{
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    height: 24px;
+    width: 70px;
+}
+.type-file-file
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 24px;
+    filter: alpha(opacity:0);
+    opacity: 0;
+    width: 260px;
+}
+/***************slect与input同时存在时对齐********************/
+
+.search_box
+{
+    margin: 5px 0px;
+    height: 20px;
+    padding-top: 2px;
+}
+.search_box input
+{
+    /*vertical-align:-2px;*/
+    _vertical-align: -3px;
+}
+.search_box label
+{
+    margin: 5px 0px 0px 3px;
+    height: 23px;
+    line-height: 23px;
+}
+.checkbox input
+{
+    vertical-align: -2px;
+    _vertical-align: -3px;
+}
+.checkbox em
+{
+    padding-left: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+/***************slect与input同时存在时对齐结束********************/
+.table_style { border:solid 1px #eee;}
+.table_style tr td { padding: 12px; word-break:break-all; overflow:auto; text-align:left; background:url(../网站首页-徐州党建_files/td_bg.jpg) repeat-x;}
+.table_style tr td em { font-style:normal; line-height:24px; border-bottom:solid 1px #333;}
+.table_style tr.first td { background:none;}
+.table_style tr td.ok_tab{ padding-right:15px; text-align:right;}
+.table_style tr td table tr td{ background:none; padding:0px 10px 0px 0px;}
+.ok_bottom { padding-top:8px; text-align: center;}
+
+/********整站评论PK**********/
+ #aspnetForm{
+    padding:8px 8px 0px 8px;
+    background-image:url(../网站首页-徐州党建_files/main_bgleft.gif); 
+    background-repeat:no-repeat; 
+    background-position:left top;
+    margin:0px;
+ }
+.sustainfilter{
+    width: 45%;
+    height: 40px;
+    filter: progid:DXImageTransform.Microsoft.Gradient (startColorStr='#FFFFFF', endColorStr='#D4EAF7', gradientType='1');
+}
+.opposefilter{
+    width: 45%;
+    filter: progid:DXImageTransform.Microsoft.Gradient (startColorStr='#D4EAF7', endColorStr='#FFFFFF', gradientType='1');
+}
+.sustainfilter2{
+    height: 30px;
+    filter: progid:DXImageTransform.Microsoft.Gradient (startColorStr='#D4EAF7', endColorStr='#FFFFFF', gradientType='1');
+}
+.opposefilter2{
+    filter: progid:DXImageTransform.Microsoft.Gradient (startColorStr='#FFFFFF', endColorStr='#D4EAF7', gradientType='1');
+ }
+.neutralismfilter{
+    filter: progid:DXImageTransform.Microsoft.Gradient (startColorStr='#FFFFFF', endColorStr='#D4EAF7', gradientType='1'); 
+    height: 40px;
+}
+
+
+.validatetd img
+{
+    vertical-align:middle;    
+}
+blockquote { font-family: "Consolas" , "Courier New" ,Courier,mono,serif; font-size: 12px; background-color: #E7E5DC; width: 99%; overflow: auto; margin: 0 0 1em 0; padding-top: 1px; }
+blockquote ol, blockquote ol li, blockquote ol li span { margin: 0; padding: 0; border: none; }
+blockquote a, blockquote a:hover { background: none; border: none; padding: 0; margin: 0; }
+blockquote ol { list-style: decimal; background-color: #fff; margin: 0px 0px 1px 45px !important; padding: 0px; color: #5C5C5C; }
+blockquote ol li { list-style: decimal-leading-zero; list-style-position: outside !important; border-left: 3px solid #6CE26C; background-color: #F8F8F8; color: #5C5C5C; padding: 0 3px 0 10px !important; margin: 0 !important; line-height: 14px; }
+blockquote ol li.alt { background-color: #FFF; color: inherit; }
+blockquote ol li span { color: black; background-color: inherit; }
+blockquote .comment, blockquote .comments { color: #008200; background-color: inherit; }
+blockquote .string { color: blue; background-color: inherit; }
+blockquote .keyword { color: #069; font-weight: bold; background-color: inherit; }
+blockquote .blockquoteprocessor { color: gray; background-color: inherit; }
+blockquote .dp-xml .cdata { color: #ff1493; }
+blockquote .dp-xml .tag, blockquote .dp-xml .tag-name { color: #069; font-weight: bold; }
+blockquote .dp-xml .attribute { color: red; }
+blockquote .dp-xml .attribute-value { color: blue; }
+blockquote .dp-sql .func { color: #ff1493; }
+blockquote .dp-sql .op { color: #808080; }
+blockquote .dp-rb .symbol { color: #a70; }
+blockquote .dp-rb .variable { color: #a70; font-weight: bold; }
+blockquote .dp-py .builtins { color: #ff1493; }
+blockquote .dp-py .magicmethods { color: #808080; }
+blockquote .dp-py .exceptions { color: brown; }
+blockquote .dp-py .types { color: brown; font-style: italic; }
+blockquote .dp-py .commonlibs { color: #8A2BE2; font-style: italic; }
+blockquote .dp-j .annotation { color: #646464; }
+blockquote .dp-j .number { color: #C00000; }
+blockquote .dp-delphi .number { color: blue; }
+blockquote .dp-delphi .directive { color: #008284; }
+blockquote .dp-delphi .vars { color: #000; }
+blockquote .dp-css .value { color: black; }
+blockquote .dp-css .important { color: red; }
+blockquote .dp-c .vars { color: #d00; }
+blockquote .dp-cpp .datatypes { color: #2E8B57; font-weight: bold; }
+
+#banner_righ {
+	background-color: #00CC00;
+	height: 80px;
+	width: 400px;
+	bottom: 0px;
+	clip: rect(15px,auto,0px,auto);
+	float: right;
+	margin-top: 8px;
+	margin-left: 255px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+ #logo_xin {
+	height: 65px;
+	float: left;
+	background-color: #333399;
+	line-height: 65px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.title2 li {
+	float: left;
+	width: 49.5%;
+	border-bottom-width: 1px;
+
+}
+.liang {
+	float: left;
+	width: 33.3%;
+}
+.titttle {
+	float: right;
+	width: 33.3%;
+	position: 固定;
+	visibility: inherit;
+}
+#buzhangxinxiang {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	top: -5px;
+	clip: rect(0px,auto,auto,auto);
+}
+#lianjie {
+	text-decoration: none;
+	text-align: center;
+	clip: rect(2px,auto,2px,auto);
+	background-position: center top;
+}
+.sidebar mtop10 .notice mtop10 mail ul {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+}
+#liajj {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	right: 0px;
+	clip: rect(auto,5px,auto,0px);
+	top: 0px;
+	bottom: 0px;
+}
+.sidebar mtop10 .notice mtop10 mail ul {
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(0px,0px,0px,0px);
+	text-decoration: none;
+}
+#wangzantoubu {
+	background-repeat: no-repeat;
+	background-position: left 0px;
+	height: 200px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+#wangzanding {
+	height: 260px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wangzantoubu #touding {
+	height: 32px;
+	width: 450px;
+}
+#wangzantoubu #touding_you {
+	clip: rect(auto,auto,auto,auto);
+	margin-left: 460px;
+}
+#toubu {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 300px;
+}
+#toubu #tou_shang {
+	line-height: 32px;
+	height: 32px;
+}
+#toubu #tou_zhong {
+	height: 236px;
+}
+#toubu #xia {
+	height: 32px;
+}
+#toubu #tou_shang #yiqi {
+	width: 400px;
+}
+#toubu #tou_shang #shoucang {
+	float: none;
+	margin-left: 500px;
+}
+#toubu #tou_zhong #logo_xinn {
+	height: 180px;
+	width: 300px;
+}
+#toubu #tou_zhong #banner_youmian {
+	height: 180px;
+	margin-left: 200px;
+}
+#top_zuo {
+	height: 100px;
+	width: 300px;
+}
+#top_you {
+	margin-left: 300px;
+	text-align: right;
+	float: right;
+	width: 500px;
+}
+#top_zuo {
+	width: 255px;
+}
+#top_you {
+	float: right;
+	height: 32px;
+}
+#zhiban1 {
+	height: 120px;
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+}#zhiban2 {
+	height: 120px;
+	width: 80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#zhiwu {
+	font-family: "方正黑体简体";
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+	float: none;
+	margin-left: 85px;
+	line-height: 30px;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-left: 10px;
+	letter-spacing: normal;
+	text-align: left;
+	vertical-align: middle;
+	word-spacing: normal;
+	display: block;
+}
+
+
+
+#shijian {
+	line-height: 31px;
+	background-color: #000099;
+	float: left;
+	margin-left: 15px;
+}
+#kuai {
+	height: 26px;
+	width: 57px;
+	background-image: url(../网站首页-徐州党建_files/db_bg2.gif);
+	float: left;
+}
+#shijian {
+	background-image: url(../网站首页-徐州党建_files/db_bg1.gif);
+	background-repeat: repeat-x;
+	width: 440px;
+	height: 26px;
+	float: left;
+	margin-top:-5px;
+	margin-left: 0px;
+	font-family: "宋体";
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	text-indent: 15px;
+	vertical-align: bottom;	
+}
+#banndong {
+	background-color: #000066;
+	float: right;
+	width: 600px;
+	height: 120px;
+	margin-top: 0px;
+	margin-left: -80px;	
+}
+.subnav{
+	margin-top: 10px;
+}
+
+#log{
+	width:100%;
+	height: 220px;
+	padding:5px 6px 10px 16px;
+}
+ #log a{
+ 	margin-right: 20px;
+ }
+.log2 .on{	
+	background: url(../images/back6.png) no-repeat;	
+	color:#980202;
+}
+.log2{
+	width:100%;
+	height: 31px;
+	margin-bottom: 17px;
+}
+.log2 a{
+	color:#9b9b9b;
+	float: left;
+	text-align: center;
+	line-height: 33px;
+	width:102px;
+	height: 32px;
+}
+.import{
+/* 	margin-top:45px; */
+	color:#5c5c5c;
+	height: 31px;
+	margin-bottom: 10px;
+	/*width:100%;
+	height: 31px;
+	margin-bottom: 10px;*/
+}
+.import span{
+	float: left;
+	width:72px;
+	height: 29px;
+	text-align: center;
+	line-height: 31px;
+	color:#5c5c5c;
+	background: url(../images./back7.png) no-repeat;
+}
+.import input{
+	width:167px;
+	height: 29px;
+	float: left;
+	border:1px solid #e6e6e6;
+	padding:0 18px;
+}
+
+#log .finally{
+	margin-bottom: 0;
+}
+.reg1{
+	width:240px;
+	height: 170px;
+}
+.pass{
+	display: block;
+	line-height: 20px;
+}
+.pass a{
+	color:#9f9f9f;
+	font-size: 10px;
+	float: right;
+	padding-right: 20px;
+}
+.con1 {
+	width:86%;
+	line-height: 27px;
+	/* text-align: center; */
+	background: url(../images/back1.png) no-repeat;
+	color:#980202;
+	cursor: pointer;
+	margin-top: 10px;
+}

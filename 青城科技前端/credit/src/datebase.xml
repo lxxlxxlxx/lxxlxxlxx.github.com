@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.connection.provider_class">com.jolbox.bonecp.provider.BoneCPConnectionProvider</prop>
+				<prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+				<prop key="hibernate.connection.url"> <![CDATA[jdbc:mysql://127.0.0.1:3306/credit?useUnicode=true&characterEncoding=utf8]]></prop>
+				<prop key="hibernate.connection.username">root</prop>
+				<prop key="hibernate.connection.password"></prop>
+				<prop key="bonecp.partitionCount">1</prop>
+				<prop key="bonecp.maxConnectionsPerPartition">10</prop>
+				<prop key="bonecp.minConnectionsPerPartition">5</prop>
+				<prop key="bonecp.acquireIncrement">1</prop><!-- #每次新增连接的数量 -->
+				<prop key="bonecp.connectionTimeout">3000</prop><!-- #连接超时时间阀值，获取连接时，超出阀值时间，则获取失败，毫秒为单位 -->
+				<prop key="bonecp.poolAvailabilityThreshold">20</prop><!-- #连接池阀值，当 可用连接/最大连接 < 连接阀值 时，创建新的连接 -->
+				<prop key="bonecp.idleConnectionTestPeriod">30</prop><!-- 测试连接有效性的间隔时间，单位分钟 -->
+				<prop key="bonecp.idleMaxAge">240</prop><!-- 连接的空闲存活时间，当连接空闲时间大于该阀值时，清除该连接 -->
+				<prop key="bonecp.statementsCacheSize">5</prop><!-- 语句缓存个数 -->
+				<prop key="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</prop>
+				<prop key="hibernate.connection.release_mode">auto</prop>
+				<prop key="hibernate.autoReconnect">true</prop>
+				<prop key="hibernate.connection.autocommit">true</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/credit/entity/Kh.hbm.xml</value>
+				<value>com/credit/entity/Sk.hbm.xml</value>
+				<value>com/credit/entity/Sq.hbm.xml</value>
+				<value>com/credit/entity/User.hbm.xml</value>
+				<value>com/credit/entity/Zcpg.hbm.xml</value>
+				<value>com/credit/entity/Ck.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="hibernatetemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+</beans>

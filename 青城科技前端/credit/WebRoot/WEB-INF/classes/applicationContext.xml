@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<import resource="datebase.xml" />
+
+	<!-- 登录注册 -->
+	<bean id="commonDao" class="com.credit.dao.CommonDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="commonService" class="com.credit.service.impl.CommonServiceImpl">
+		<property name="dao" ref="commonDao"></property>
+	</bean>
+	<bean id="commonAction" class="com.credit.action.CommonAction">
+		<property name="biz" ref="commonService"></property>
+	</bean>
+
+	<!-- 客户信息 -->
+	<bean id="khDao" class="com.credit.dao.KhDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="khService" class="com.credit.service.impl.KhServiceImpl">
+		<property name="dao" ref="khDao"></property>
+	</bean>
+	<bean id="khAction" class="com.credit.action.KhAction">
+		<property name="biz" ref="khService"></property>
+	</bean>
+
+	<!-- 收款信息 -->
+	<bean id="skDao" class="com.credit.dao.SkDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="skService" class="com.credit.service.impl.SkServiceImpl">
+		<property name="dao" ref="skDao"></property>
+	</bean>
+	<bean id="skAction" class="com.credit.action.SkAction">
+		<property name="biz" ref="skService"></property>
+	</bean>
+
+	<!-- 申请信息 -->
+	<bean id="sqDao" class="com.credit.dao.SqDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="sqService" class="com.credit.service.impl.SqServiceImpl">
+		<property name="dao" ref="sqDao"></property>
+	</bean>
+	<bean id="sqAction" class="com.credit.action.SqAction">
+		<property name="biz" ref="sqService"></property>
+		<property name="khbiz" ref="khService"></property>
+	</bean>
+
+	<!-- 资产评估信息 -->
+	<bean id="zcpgDao" class="com.credit.dao.ZcpgDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="zcpgService" class="com.credit.service.impl.ZcpgServiceImpl">
+		<property name="dao" ref="zcpgDao"></property>
+	</bean>
+	<bean id="zcpgAction" class="com.credit.action.ZcpgAction">
+		<property name="biz" ref="zcpgService"></property>
+		<property name="sqbiz" ref="sqService"></property>
+	</bean>
+
+	<!-- 催款信息 -->
+	<bean id="ckDao" class="com.credit.dao.CkDao">
+		<property name="ht" ref="hibernatetemplate"></property>
+	</bean>
+	<bean id="ckService" class="com.credit.service.impl.CkServiceImpl">
+		<property name="dao" ref="ckDao"></property>
+	</bean>
+	<bean id="ckAction" class="com.credit.action.CkAction">
+		<property name="biz" ref="ckService"></property>
+	</bean>
+</beans>

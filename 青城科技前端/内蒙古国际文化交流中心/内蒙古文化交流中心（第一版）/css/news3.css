@@ -1,0 +1,99 @@
+*{
+	font-family: "微软雅黑";
+}
+.content_cn{
+	overflow: hidden;
+	margin-top: 20px;
+}
+.content_cn_left{
+	width: 70%; 
+	float: left;
+	padding-top: 20px;
+	height: 945px;
+	overflow: hidden;
+}
+
+.content_cn_right{
+	width: 20%; 
+	float: right;
+}
+.modle1{
+	width: 100%;
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 10px;
+}
+.modle1 a{
+	color: #333;
+}
+.modle1 h4:hover{
+	color: green;
+}
+.modle_pic{
+	overflow: hidden;
+}
+.modle_pic li{
+	float: left;
+	width: 33.3%;
+	overflow: hidden;
+}
+.modle_pic li img{
+	width: 100%;
+	padding: 0 6px;
+	height: 125px;
+	transition: all 0.6s;
+}
+.modle_pic li img:hover{
+	transform: scale(1.4);
+}
+.hot{
+	padding: 50px 10px;
+	list-style: disc;
+}
+.hot h5{
+	margin-bottom: 20px;
+}
+.hot li{
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+.content_cn_bottom{
+	width: 100%;
+}
+.content_cn_bottom h4{
+	color: red;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 15px;
+}
+.modle2{
+	overflow: hidden;
+	padding: 15px 0 ;
+	float: left;
+	width: 49%;
+}
+.modle2 img{
+	float: left;
+	width: 100px;
+	height: 75px;
+}
+.modle2 h5{
+	font-weight: bold;
+	padding-left: 115px;
+}
+.modle2 p{
+	color: #666;
+	margin-left: 115px;
+}
+.hot_pic{
+	margin-bottom: 20px;
+	position: relative;
+}
+.hot_pic span{
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}

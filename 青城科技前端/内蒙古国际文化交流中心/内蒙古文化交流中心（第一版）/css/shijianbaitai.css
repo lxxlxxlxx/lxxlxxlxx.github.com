@@ -1,0 +1,270 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+.swiper-container {
+	width: 580px;
+	height: 325px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.content{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.swiper-container{
+	float: left;
+}
+.content_right{
+	padding: 5px 10px;
+	width: 400px;
+	float: right;
+	height: 325px;
+	margin-top: -325px;
+}
+.content_right h4 a{
+	font-weight: bold;
+}
+.content_right a{
+	color: black;
+	text-decoration: none;
+}
+
+.content_right a:hover{
+	animation: myaa 0.7s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+@-moz-keyframes myaa{
+	100%{
+		font-size: 0.9em;
+		color: #666666;
+	
+	}
+}
+@-webkit-keyframes myaa{
+	100%{
+		font-size: 0.9em;
+	}
+}
+.content_right_p{
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 10px;
+}
+.content_right_ul li a{
+	font-size: 14px;
+}
+.content_right_ul{
+	padding: 10px 0px ;
+}
+.content_right_ul li{
+	margin-top: 3px;
+}
+.cn{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+}
+.cn_left{
+	width: 580px;
+	height: 500px;
+	float: left;
+}
+.cn_right{
+	float: right;
+	width: 400px;
+}
+.content_right_bottom{
+	margin-right: 80px;
+	margin-top: 10px;
+	float: right;
+	width: 303px;
+}
+.content_right_bottom_tit{
+	float: right;
+	border-bottom: 1px solid #ededed;
+	width: 303px;
+	
+}
+.content_right_bottom_tit h3{
+	float: left;
+}
+.content_right_bottom_tit a{
+	color: white;
+	padding: 2px 5px;
+	background: red;
+	float: right;
+	margin-top: 23px;
+}
+.content_right_bottom_cn h5{
+	margin-top: 10px;
+	text-align: center;
+}
+.content_right_bottom_cn a{
+	color: black;
+}
+.content_right_bottom_cn a:hover{
+	color: #666666;
+	text-decoration: none;
+}
+.content_right_bottom_ul {
+	padding: 10px 0px;
+	border-bottom: 1px solid #ededed;
+	margin-top:5px;
+}
+.content_right_bottom_ul  li{
+	color: #000000;
+	padding: 5px;
+	background: #f0f0f0;
+	margin-left: 25px;
+	display: inline-block;
+}
+.content_right_bottom_ul  li a{
+	color: #8b8b8b;
+}
+.content_right_bottom_cn{
+	float: left;
+}
+.tul{
+	width: 580px;
+	
+}
+.tli{
+	cursor: pointer;
+	position: relative;
+	float: left;
+	padding:8px 30px;
+	font-size: 16px;
+	border-bottom: 2px solid #666666;
+	display: inline-block;
+}
+.ttable{
+	position: absolute;
+	width: 580px;
+	height: 200px;
+}
+.ttable1{
+	padding: 20px 10px;
+	margin-left: -30px;
+	margin-top: 11px;
+}
+.ttable2{
+	padding: 20px 10px;
+	margin-left: -155px;
+	margin-top: 11px;
+	display: none;
+}
+.ttable3{
+	padding: 20px 10px;
+	margin-left: -280px;
+	margin-top: 11px;
+	display: none;
+}
+.bor{
+	border-top:3px solid #1b5216;
+	box-sizing: border-box;
+	border-bottom: 0px;
+	border-left: 1px solid #666666;
+	border-right: 1px solid #666666;
+}
+.title_aa{
+	font-size: 15px;
+	color: black;
+	margin-top: 10px;
+	width: 160px;
+	float: right;
+	
+}
+.title_aa:hover{
+	text-decoration: none;
+	color: #666666;
+}
+.ttable1_cn{
+	margin-top: 20px;
+	width: 580px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.ttable1_cn a{
+	color: #666666;
+}
+.ttable1_cn a:hover{
+	color: black;
+	text-decoration: none;
+}
+.ttable1_cn_ul li{
+	text-align: center;
+	width: 100px;
+	padding: 3px 10px;
+	background: #f0f0f0;
+}
+.ttable1_cn_ul li{
+	margin-left: 20px;
+	display: inline-block;
+}
+.hot{
+	width: 303px;
+	padding: 10px 0px;
+}
+.hot p a{
+	color: black;
+	font-size: 12px;
+}
+.hot p span{
+	padding: 5px;
+	font-size: 15px;
+}
+.first,.two,.three{
+	color: white;
+}
+.first span{
+	background: #e60013;
+}
+.two span{
+	background:#e57201 ;
+}
+.three span{
+	background: #e6a800;
+}
+.hot p a:hover{
+	text-decoration: none;
+	color: #666666;
+}

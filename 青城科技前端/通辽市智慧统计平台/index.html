@@ -1,0 +1,339 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>通辽市智慧统计平台</title>
+	<link rel="stylesheet" href="css/css.css"/>
+	<link rel="stylesheet" href="css/base.css"/>
+	<script sec="js/js.js"></script>
+</head>
+<body id="body">
+	<div class="top">
+		<div class="topL clearfix">
+			<span class="logo"></span>
+			<span class="name">通辽市智慧统计平台</span>
+		</div>
+		<div class="topR">
+			<span class="topR1">用 数 字 说 话</span>
+			<span class="topR2">为 决 策 服 务</span>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content1">
+			<div class="xt-1">
+				<h3>数据云平台</h3>
+				<a href="#">数据存储系统</a>
+				<a href="#">数据结构管理系统</a>
+				<a href="#">部门数据交换系统</a>
+			</div>
+			<div class="xt-2">
+				<h3>数据管理平台</h3>
+				<a href="#">网格化管理系统</a>
+				<a href="#">统计业务一体化系统</a>
+				<a href="#">社情民意快速调查系统</a>
+				<a href="#">社会居民采价系统</a>
+			</div>
+			<div class="xt-3">
+				<h3>数据分析预警系统</h3>
+				<a href="#">数据挖掘预测预警系统</a>
+				<a href="#">重大项目指标智能监测系统</a>
+				<a href="#">数据支持信息系统</a>
+			</div>
+			<div class="xt-4">
+				<h3>数据应用平台</h3>
+				<a href="http://59.111.91.127:8080/analystrunner/50ff1da6-60e1-4af1-8d7c-a7cd276d744d">统计数据地理分析系统</a>
+				<a href="#">领导桌面分析系统</a>
+				<a href="#">数据综合系统</a>
+				<a href="#">可视化分析系统</a>
+			</div>
+			 <div class="xt-5">
+				<h3>数据服务平台</h3>
+				<a href="#">统计数据查询服务系统</a>
+				<a href="#">数据发布服务系统</a>
+				<a href="#">数据通辽APP</a>
+			</div> 
+		
+		<canvas width="1200" height="570"></canvas>
+		<script>
+			function d2a(n){
+				return Math.PI/180*n;
+			}
+
+			window.onload=function(){
+				var oC=document.querySelector('canvas');
+				
+				var gd=oC.getContext('2d');
+				//引入图片
+				
+
+				center();
+				function center(){
+					//中心透明的圆
+					gd.beginPath();				
+					gd.arc(600,300,80,0,2*Math.PI,false);
+					gd.fillStyle='rgba(255, 255, 255, 0.3)';
+					gd.fill();
+					gd.stroke();
+					//字
+					gd.beginPath();
+					gd.font="italic 30px 宋体 bold";
+					gd.textAlign="center";
+					gd.fillStyle='#000';
+					gd.lineWidth=1;
+					gd.fillText('通辽市',600,270);
+					//字
+					gd.beginPath();
+					gd.font="italic 30px 宋体 bold";
+					gd.textAlign="center";
+					gd.fillStyle='#000';
+					gd.lineWidth=1;
+					gd.fillText('智慧统计',600,310);
+					//字
+					gd.beginPath();
+					gd.font=" italic 30px 宋体 bold";
+					gd.textAlign="center";
+					gd.fillStyle='#000';
+					gd.lineWidth=1;
+					gd.fillText('平台',595,350);
+					//尾部
+					gd.beginPath();
+					gd.font=" 18px 宋体";
+					gd.textAlign="center";
+					gd.fillStyle='#000';
+					gd.lineWidth=1;
+					gd.fillText('通辽市统计局版权所有',600,550);
+					//中心弧度圆
+					gd.beginPath();
+					gd.strokeStyle='#03496d';
+					gd.lineWidth=10;
+					gd.arc(600,300,80,0,2*Math.PI,false);
+					gd.stroke();
+
+					//最外层圆
+					gd.beginPath();
+					gd.strokeStyle='#dbdcd7';
+					gd.lineWidth=8;
+					gd.arc(600,300,200,0,2*Math.PI,false);
+					gd.stroke();
+
+					/*gd.beginPath();
+					gd.strokeStyle='#e9a70a';
+					gd.lineWidth=10;
+					gd.arc(600,300,100,d2a(0),d2a(90),false);
+					gd.stroke();*/
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(0),d2a(10),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(20),d2a(30),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(40),d2a(50),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(60),d2a(70),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(80),d2a(90),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(100),d2a(110),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(120),d2a(130),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(140),d2a(150),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(160),d2a(170),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(180),d2a(190),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(200),d2a(210),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(220),d2a(230),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(240),d2a(250),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(260),d2a(270),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(280),d2a(290),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(300),d2a(310),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(320),d2a(330),false);
+					gd.stroke();
+					//虚线圆
+					gd.beginPath();
+					gd.strokeStyle='#77ebeb';
+					gd.lineWidth=5;
+					gd.arc(600,300,180,d2a(340),d2a(350),false);
+					gd.stroke();	
+
+					//划线
+					function drawDashLine(gd, x1, y1, x2, y2, dashLength){
+				      var dashLen = dashLength === undefined ? 5 : dashLength,
+				      xpos = x2 - x1, //得到横向的宽度;
+				      ypos = y2 - y1, //得到纵向的高度;
+				      numDashes = Math.floor(Math.sqrt(xpos * xpos + ypos * ypos) / dashLen); 
+				      //利用正切获取斜边的长度除以虚线长度，得到要分为多少段;
+				      for(var i=0; i<numDashes; i++){
+				         if(i % 2 === 0){
+				             gd.moveTo(x1 + (xpos/numDashes) * i, y1 + (ypos/numDashes) * i); 
+				             //有了横向宽度和多少段，得出每一段是多长，起点 + 每段长度 * i = 要绘制的起点；
+				          }else{
+				              gd.lineTo(x1 + (xpos/numDashes) * i, y1 + (ypos/numDashes) * i);
+				          }
+				       }
+				      gd.stroke();
+					
+				}
+				//数据云平台
+				gd.lineWidth = 2;
+				gd.strokeStyle = "#77eaed";
+				drawDashLine(gd,410,225,410,165,5); 
+				drawDashLine(gd,410,165,150,165,5); 
+				drawDashLine(gd,150,165,150,100,5); 
+
+				var oImg=new Image();
+		    	oImg.src='img/4.png';
+				/*oImg.onload=function(){*/
+					gd.drawImage(oImg,120,45,64,64);	
+				/*};*/
+				//数据管理平台
+				gd.lineWidth = 2;
+				gd.strokeStyle = "#77eaed";
+				drawDashLine(gd,760,175,760,135,5); 
+				drawDashLine(gd,760,135,1000,135,5);
+				drawDashLine(gd,1000,135,1000,100,5);
+				var oImg=new Image();
+		    	oImg.src='img/3.png';
+				/*oImg.onload=function(){*/
+					gd.drawImage(oImg,970,45,64,64);	
+				/*};*/
+
+				//数据分析预警预测系统
+				gd.lineWidth = 2;
+				gd.strokeStyle = "#77eaed";
+				drawDashLine(gd,440,430,400,480,5); 
+				drawDashLine(gd,400,480,80,480,5);
+				drawDashLine(gd,80,480,80,380,5);
+				var oImg=new Image();
+				oImg.src='img/5.png';
+				gd.drawImage(oImg,50,320,64,64);
+				//数据应用平台
+				gd.lineWidth = 2;
+				gd.strokeStyle = "#77eaed";
+				drawDashLine(gd,805,280,845,280,5); 
+				drawDashLine(gd,845,280,845,240,5);
+				drawDashLine(gd,845,240,900,240,5);
+				var oImg=new Image();
+				oImg.src='img/2.png';
+				gd.drawImage(oImg,890,200,64,64);
+				
+				//数据服务平台
+				gd.lineWidth = 2;
+				gd.strokeStyle = "#77eaed";
+				drawDashLine(gd,740,450,850,450,5); 
+				var oImg=new Image();
+				oImg.src='img/1.png';
+				gd.drawImage(oImg,850,415,64,64);
+				}
+
+
+				var i=0;
+				var j=0;
+				var k=0;
+				//旋转的弧度
+				setInterval(function(){		
+					gd.clearRect(0,0,oC.width,oC.height);
+
+					center();
+					i+=2;
+					gd.beginPath();
+					gd.strokeStyle='#74eced';
+					gd.lineWidth=10;
+					gd.arc(600,300,100,d2a(i),d2a(90+i),false);
+					gd.stroke();
+					j+=4;
+					gd.beginPath();
+					gd.strokeStyle='#eba706';
+					gd.lineWidth=10;
+					gd.arc(600,300,140,d2a(j),d2a(140+j),false);
+					gd.stroke();
+
+					k+=6;
+					gd.beginPath();
+					gd.strokeStyle='#051664';
+					gd.lineWidth=10;
+					gd.arc(600,300,120,d2a(k),d2a(120+k),false);
+					gd.stroke();
+				},30);
+				
+			};
+		</script>
+	</div>	
+	</div>
+	<div class="footer"></div>
+
+</body>
+</html>

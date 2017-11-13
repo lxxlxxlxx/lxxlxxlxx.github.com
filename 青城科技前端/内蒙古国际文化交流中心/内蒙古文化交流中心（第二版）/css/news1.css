@@ -1,0 +1,150 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
+.weizhi{
+	width: 100%;
+	background: #f2f2f2;
+	margin-top: 10px;
+}
+.weizhi_cn{
+	margin: 0 auto;
+	width: 1000px;
+	height: 45px;
+	line-height: 45px;
+}
+.weizhi_cn ul li{
+	display: inline-block;
+}
+.weizhi_cn ul li a{
+	color: black;
+}
+.weizhi_cn ul li a:hover{
+	color: #666666;
+	text-decoration: none;
+}
+.content_left{
+	width: 650px;
+	height: 980px;
+	overflow: hidden;
+	float: left;
+	margin: 0 auto;
+}
+.content_left ul {
+	margin-top: 20px;
+	width: 650px;
+}
+.content_left ul li{
+	margin-top: 8px;
+	display: inline-block;
+}
+.left_cn{
+	width: 530px;
+	height: 20px;
+}
+.left_time{
+	text-align: right;
+	width: 110px;
+	height: 20px;
+}
+.left_cn a{
+	color: black;
+}
+.left_cn a:hover{
+	color: #666666;
+	text-decoration: none;
+}
+.news1_content{
+	width: 1000px;
+	margin: 0 auto;
+}
+.content_right,.content_right_bottom{
+	margin-top: 20px;
+	float: right;
+	width: 303px;
+}
+.content_right_top ul li{
+	display: inline-block;
+}
+.toutiao a{
+	padding: 5px;
+	font-size: 20px;
+	color: white;
+	background: red;
+}
+.toutiao_title {
+	float: right;
+	margin-right: 5px;
+	margin-top:7px;
+}
+.toutiao_title  a{
+	font-size: 18px;
+	font-weight: bold;
+}
+.content_right_top a:hover{
+	text-decoration: none;
+}
+.toutiao_poto{
+	margin-top: 10px;
+	
+}
+.toutiao_cn{
+	padding: 7px 5px;
+}
+.toutiao_cn a{
+	color: black;
+}
+.content_right_bottom_tit{
+	float: right;
+	border-bottom: 1px solid #666666;
+	width: 303px;
+	
+}
+.content_right_bottom_tit h3{
+	float: left;
+}
+.content_right_bottom_tit a{
+	color: white;
+	padding: 2px 5px;
+	background: red;
+	float: right;
+	margin-top: 23px;
+}
+.content_right_bottom_cn h5{
+	margin-top: 10px;
+	text-align: center;
+}
+.content_right_bottom_cn a{
+	color: black;
+}
+.content_right_bottom_cn a:hover{
+	color: #666666;
+	text-decoration: none;
+}
+.content_right_bottom_ul {
+	padding: 10px 0px;
+	border-bottom: 1px solid #666666;
+	margin-top:5px;
+}
+.content_right_bottom_ul  li{
+	color: #000000;
+	padding: 5px;
+	background: #f0f0f0;
+	margin-left: 25px;
+	display: inline-block;
+}
+.content_right_bottom_ul  li a{
+	color: #8b8b8b;
+}
+.content_right_bottom_cn{
+	float: left;
+}

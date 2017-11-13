@@ -1,0 +1,107 @@
+
+<!-- saved from url=(0078)http://www.qingchengtech.com/mapPanel.jsp?id=310&w=777&ran=0.05021541843894073 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html;">
+<title></title>
+<script type="text/javascript" src="./jquery-core.min.js"></script>
+<script type="text/javascript" src="./fai.min.js"></script>
+
+<script src="./api" type="text/javascript"></script><script type="text/javascript" src="./getscript"></script><link rel="stylesheet" type="text/css" href="./bmap.css">
+
+<script type="text/javascript">
+$(function(){
+	if (false) {
+		Fai.ing("当前设置的坐标数据有问题，为保证百度API正常使用，现已重置为默认坐标。请您联系客服处理。", true);
+	}
+	if(1 == 1){
+		if( typeof BMap == 'undefined' ){
+			var mapContainer = $('#mapContainer310');
+			mapContainer.css({ color: 'red', position: 'relative', textAlign: 'center' });
+			var msg = $('<div>').css({ position: 'absolute', top:'50%', width:'100%' }).text('加载地图失败，请刷新重试');
+			mapContainer.append( msg );
+		}else{
+			var mMap = new BMap.Map( 'mapContainer310' );
+			var mPoint = new BMap.Point( 111.738343, 40.777274 );
+			var oPoint = new BMap.Point( 111.73678, 40.777629 );
+			var mInfoWindow = new BMap.InfoWindow( "公司地址：赛罕区金桥电子商务产业园4楼414", { width:'auto', height:'auto', title:'', enableAutoPan:false });
+
+			var mMarker = new BMap.Marker( oPoint );
+			/*mMarker.addEventListener('infowindowopen', function(e) {
+				setTimeout(function(){
+					var moduleWidth = 777;
+					var diff = 0;
+					if( moduleWidth < 255 ){
+						diff = 777 - 255;
+						if( diff < -100 ){ diff = -100; }
+					}
+					var pop = $('#mapContainer310').children('#platform').children('#mask').next().children('div:first').children('div.pop');
+					var divTop = pop.children('.top');
+					divTop.css({ width: (202+diff) + 'px' });// top-center source [202px]
+					divTop.next().css({ left: (227+diff) + 'px' });// top-right-radius source [227px]
+					
+					//middle-center source [250px]
+					if( $.browser.msie ){
+						if( $.browser.version < 8 ){
+							pop.children('.center').css({ width: (250+diff+2) + 'px' });
+						}else{
+							pop.children('.center').css({ width: (250+diff) + 'px' });
+						}
+					} else {
+						pop.children('.center').css({ width: (250+diff) + 'px' });
+					}
+					var divBottom = pop.children('.bottom');
+					divBottom.css({ width: (202+diff) + 'px' });// bottom-center source [202px]
+					divBottom.next().css({ left: (227+diff) + 'px' });// bottom-right-radius source [227px]
+					pop.children('div:last').css({ width: (220+diff) + 'px' });// middle-center text source [220px]
+					pop.children('img:first').css({ left: (227+diff) + 'px' });// close img button source [227px]
+				}, 100);
+			})*/
+			mMarker.addEventListener('click', function(e) {
+				if( mInfoWindow.isOpen() ){
+					this.closeInfoWindow();
+				} else {
+					this.openInfoWindow(mInfoWindow);
+				}
+			});
+			mMap.centerAndZoom( mPoint, 17 );
+			mMap.disableDoubleClickZoom();
+			mMap.addControl( new BMap.NavigationControl() );
+			mMap.addOverlay( mMarker );
+			mMarker.openInfoWindow( mInfoWindow );
+		}
+	}
+	if(1 == 2){
+		if(typeof google.maps.Map == 'undefined'){
+			var googleMapContainer = $('#mapContainer310');
+			mapContainer.css({ color: 'red', position: 'relative', textAlign: 'center' });
+			var msg = $('<div>').css({ position: 'absolute', top:'50%', width:'100%' }).text('加载地图失败，请刷新重试');
+			mapContainer.append( msg );
+		}else{
+			//获取承载谷歌地图的容器
+			var container = document.getElementById('mapContainer310');
+			var myLatLng = new google.maps.LatLng( 113.33254255767213,23.133158856784426);
+			var myOverLatLng = new google.maps.LatLng( 113.33254255767213,23.133158856784426);
+			//创建谷歌地图
+			var googleMap = new google.maps.Map(container, 
+							{draggable : true,
+							scrollwheel : false,
+							zoom : 16,
+							streetViewControl: false,
+							center:myOverLatLng,
+							scaleControl: true,
+							mapTypeId : google.maps.MapTypeId.ROADMAP});
+			//创建标记
+			marker = new google.maps.Marker({map : googleMap,position:myLatLng,animation: google.maps.Animation.DROP,
+												draggable : true});
+			marker.setMap(googleMap);
+			var infoWin = new google.maps.InfoWindow({content:"公司地址：赛罕区金桥电子商务产业园4楼414",width:"auto",height:"auto"});
+			infoWin.open(googleMap,marker);
+		}
+	}
+});
+</script>
+</head>
+<body style="margin:0px; padding:0px; font-size:12px;">
+<div id="mapContainer310" style="height: 300px; width: 780px; overflow: hidden; position: relative; z-index: 0; background-image: url(&quot;http://api.map.baidu.com/images/bg.png&quot;); color: rgb(0, 0, 0); text-align: left;"><div id="platform" style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default;"><div id="mask" class=" BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 780px; height: 300px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"><div class="pop" style="position: absolute; cursor: default; left: 184px; top: -12px;"><div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 0px; width: 25px; height: 25px;"><img style="border:none;margin:0px;padding:0px;position:absolute;left:0px;top:0px;width:690px;height:786px;" src="./iw3.png"></div><div class="top" style="overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 0px; width: 222px; height: 25px;"><img src="./iw3.png" style="position:absolute; left: -65px; top: -60px;"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 247px; top: 0px; width: 25px; height: 25px;"><img style="border:none;margin:0px;padding:0px;position:absolute;left:-665px;top:0px;width:690px;height:786px;" src="./iw3.png"></div><div class="center" style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 25px; width: 270px; height: 37px;"><img src="./iw3.png" style="position:absolute;left:-65px;top:-60px;"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 62px; width: 25px; height: 25px;"><img style="border:none;margin:0px;padding:0px;position:absolute;left:0px;top:-665px;width:690px;height:786px;" src="./iw3.png"></div><div class="bottom" style="overflow: hidden; z-index: 1; position: absolute; left: 25px; top: 62px; width: 222px; height: 24px;"><img src="./iw3.png" style="position:absolute;left:-65px;top:-146px;"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 247px; top: 62px; width: 25px; height: 25px;"><img style="border:none;margin:0px;padding:0px;position:absolute;left:-665px;top:-665px;width:690px;height:786px;" src="./iw3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 119px; top: 62px; width: 34px; height: 50px;"><img style="border:none;margin:0px;padding:0px;position:absolute;left:-186px;top:-691px;width:690px;height:786px;" src="./iw3.png"></div><div style="width: 240px; height: 55px; position: absolute; left: 16px; top: 16px; z-index: 10; overflow: hidden;"><div class="BMap_bubble_title" style="display: none; overflow: hidden; height: auto; line-height: 24px; white-space: nowrap; width: auto;"></div><div class="BMap_bubble_content" style="width: auto; height: auto;">公司地址：赛罕区金桥电子商务产业园4楼414</div><div class="BMap_bubble_max_content" style="display:none;position:relative"></div></div><img style="position: absolute; top: 12px; width: 12px; height: 12px; cursor: pointer; z-index: 10000; left: 247px;" src="./iw_close.gif"><img style="position: absolute; top: 12px; width: 12px; height: 12px; cursor: pointer; z-index: 10000; display: none; left: 227px;" src="./iw_plus.gif"></div></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; background: url(&quot;http://api.map.baidu.com/images/blank.gif&quot;); width: 23px; height: 25px; left: 293px; top: 99px; z-index: -8155524;" title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"><div class="shadow" style="position: absolute; left: 162px; top: 32px;" type="infowindow_shadow"><div style="overflow: hidden; z-index: 1; position: absolute; left: 36px; top: 0px; width: 70px; height: 30px;"><img onmousedown="return false" style="left: -323px; top: 0px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 106px; top: 0px; width: 183px; height: 30px;"><img onmousedown="return false" style="left: -393px; top: 0px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 289px; top: 0px; width: 70px; height: 30px;"><img onmousedown="return false" style="left: -1033px; top: 0px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 29px; top: 30px; width: 77px; height: 7px;"><img onmousedown="return false" style="top: -30px; left: -316px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 106px; top: 30px; width: 205px; height: 7px;"><img onmousedown="return false" style="left: -360px; top: -30px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 311px; top: 30px; width: 77px; height: 7px;"><img onmousedown="return false" style="top: -30px; left: -1056px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 0px; top: 37px; width: 50px; height: 60px;"><img onmousedown="return false" style="left: -14px; top: -310px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 50px; top: 37px; width: 21px; height: 60px;"><img onmousedown="return false" style="left: -255px; top: -310px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 71px; top: 37px; width: 140px; height: 60px;"><img onmousedown="return false" style="left: -440px; top: -310px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 211px; top: 37px; width: 71px; height: 60px;"><img onmousedown="return false" style="left: -255px; top: -310px;" src="./iws3.png"></div><div style="overflow: hidden; z-index: 1; position: absolute; left: 282px; top: 37px; width: 70px; height: 60px;"><img onmousedown="return false" style="left: -754px; top: -310px;" src="./iws3.png"></div></div></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 303px; top: 124px; z-index: -8155524;"><div style="position: absolute; margin: 0px; padding: 0px; width: 23px; height: 25px; left: -10px; top: -25px; overflow: hidden;"><img src="./marker_red.png" style="border:none;left:0px; top:0px; position:absolute;"></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; z-index: -1; left: 390px; top: 150px;"><img src="./saved_resource" style="position: absolute; border: none; width: 256px; height: 256px; left: -387px; top: -344px;"><img src="./saved_resource(1)" style="position: absolute; border: none; width: 256px; height: 256px; left: -131px; top: -88px;"><img src="./saved_resource(2)" style="position: absolute; border: none; width: 256px; height: 256px; left: -643px; top: -344px;"><img src="./saved_resource(3)" style="position: absolute; border: none; width: 256px; height: 256px; left: -387px; top: -88px;"><img src="./saved_resource(4)" style="position: absolute; border: none; width: 256px; height: 256px; left: -131px; top: -344px;"><img src="./saved_resource(5)" style="position: absolute; border: none; width: 256px; height: 256px; left: 125px; top: -88px;"><img src="./saved_resource(6)" style="position: absolute; border: none; width: 256px; height: 256px; left: -643px; top: -88px;"><img src="./saved_resource(7)" style="position: absolute; border: none; width: 256px; height: 256px; left: 125px; top: -344px;"><img src="./saved_resource(8)" style="position: absolute; border: none; width: 256px; height: 256px; left: 381px; top: -88px;"><img src="./saved_resource(9)" style="position: absolute; border: none; width: 256px; height: 256px; left: 381px; top: -344px;"></div></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api.map.baidu.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div class=" anchorBL" style="height: 32px; position: absolute; z-index: 10; bottom: 0px; right: auto; top: auto; left: 1px;"><a title="到百度地图首页" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="./copyright_logo.png"></a></div><div unselectable="on" class=" BMap_cpyCtrl anchorBL" style="cursor: default; white-space: nowrap; bottom: 2px; right: auto; top: auto; left: 81px; position: absolute; z-index: 10;"><span style="-webkit-text-size-adjust:none;color:#000;background:none;line-height:15px;font:11px arial,simsun" _cid="1">© 2015 Baidu</span></div><div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL" style="width: 52px; height: 226px; bottom: auto; right: auto; top: 10px; left: 10px; position: absolute; z-index: 1100;"><div class="BMap_stdMpPan"><div class="BMap_button BMap_panN" title="向上平移"></div><div class="BMap_button BMap_panW" title="向左平移"></div><div class="BMap_button BMap_panE" title="向右平移"></div><div class="BMap_button BMap_panS" title="向下平移"></div><div class="BMap_stdMpPanBg BMap_smcbg"></div></div><div class="BMap_stdMpZoom" style="height: 167px; width: 52px;"><div style="height: 167px; width: 37px;"><div class="BMap_button BMap_stdMpZoomIn" title="放大一级"><div class="BMap_smcbg"></div></div><div class="BMap_button BMap_stdMpZoomOut" title="缩小一级"><div class="BMap_smcbg"></div></div></div><div class="BMap_stdMpSlider" style="height: 133px;"><div class="BMap_stdMpSliderBgTop" style="height: 124px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderBgBot" style="top: 124px;"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderMask" title="放置到此级别"></div><div class="BMap_stdMpSliderBar" title="拖动缩放" style="cursor: url(&quot;http://api.map.baidu.com/images/openhand.cur&quot;) 8 8, default; top: 8px;"><div class="BMap_smcbg"></div></div></div><div class="BMap_zlHolder"><div class="BMap_zlSt"><div class="BMap_smcbg"></div></div><div class="BMap_zlCity"><div class="BMap_smcbg"></div></div><div class="BMap_zlProv"><div class="BMap_smcbg"></div></div><div class="BMap_zlCountry"><div class="BMap_smcbg"></div></div></div></div></div></div>
+
+</body></html>

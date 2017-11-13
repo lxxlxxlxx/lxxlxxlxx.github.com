@@ -1,0 +1,164 @@
+body{
+	width:100%;
+	background:url(../img/2f53ff30a938968.jpg) no-repeat ;
+	margin:0;
+	background-size:100% 110%;
+	padding:0;
+}
+.center1{
+	width:1083px;
+	height: 
+}
+.logo{
+	width:1083px;
+	margin:0 auto;
+
+}
+.logoL{
+	float: left;
+}
+h1 span{
+	display: block;
+	float: left;
+}
+.center{
+	width:1083px;
+	margin:0 auto;
+}
+.logo1{
+	width:70px;
+	height: 70px;
+	background: url(../img/logo1.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.logo2{
+	font-size: 32px;
+	margin-left: 20px;
+	line-height: 74px;
+	color:#103597;
+}
+#logoR{
+	float: right;
+	line-height: 74px;
+}
+.login{
+	width:100%;
+	background: #fff;
+	margin-top: 20px;
+}
+.login{
+	width:400px;
+	
+	float: right;
+	margin-top: 100px;
+	padding:45px 25px 5px 25px;
+}
+.login1 input{
+	display: block;
+	width:348px;
+	height: 50px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+}
+.login1 a{
+	display: block;
+}
+.login1 .yan1{
+	width:140px;
+	height: 56px;
+	padding:14px;
+	float: left;
+}
+.text{
+	width:25px;
+	height: 27px;
+	background: url(../img/text.png) no-repeat 10px 10px;
+	padding-left:45px;
+	padding-right: 18px;
+}
+.pw{
+	width:25px;
+	height: 27px;
+	background: url(../img/pw.png) no-repeat 10px 10px;
+	padding-left:45px;
+	padding-right: 18px;
+}
+.yan{
+	width:140px;
+	height: 56px;
+	float: right;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	background: url(../img/yan1.png)no-repeat center;
+}
+.deng{
+	width:348px;
+	height: 56px;
+	background: #faa600;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color:#fff;
+	line-height: 56px;
+	font-size: 26px;
+	text-align: center;
+	border-radius: 5px;
+}
+.wang{
+	width:348px;
+	height: 56px;
+	color:#ccc;
+	line-height: 56px;
+	font-size: 26px;
+	text-align: center;
+}
+.footer{
+	position: fixed;
+	bottom:12px;
+	left:0;
+	width:100%;
+	margin:0 auto;
+}
+.footer1{
+	width:325px;
+	margin:0 auto;
+	font-size: 13px;
+	text-align: center;
+}
+.end{
+	width:98px;
+	height: 51px;
+	margin:0 auto;
+}
+.footer2{
+	float: left;
+}
+.end span{
+	display: block;
+}
+.footer-img{
+	float: left;
+	text-decoration: middle;
+	margin-top: 3px;
+}
+.end i{
+	 font-style:normal;
+	 color:#de0017;
+}
+.clock:hover a{
+	color:#2b921e;
+}
+.china{
+	float: left;
+	margin-top: 14px;
+	margin-right: 8px;
+}
+.end img{
+	width:40px;
+	height: 30px;
+	float: left;
+}
+.china1{
+	font-size:10px; 
+}

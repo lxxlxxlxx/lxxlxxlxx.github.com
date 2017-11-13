@@ -1,0 +1,37 @@
+.content-content{
+	width:1200px;
+	margin:0 auto;
+	background: #fff;
+}
+.intint{
+	padding:10px;
+}
+.int{
+	border:1px solid #ccc;
+	padding-right:169px;
+	padding:35px 368px 0 35px;
+	line-height: 26px;
+	position: relative;
+}
+.int .int1{
+	font-size: 24px;
+	color:#383838;
+	list-style:square;
+	margin-bottom: 55px;
+	margin-left: 35px;
+}
+.int  .on{
+	margin-top: 60px;
+}
+.int .int2{
+	font-size: 16px;
+	color:#757575;
+}
+.int  .two{
+	margin-bottom: 37px;
+}
+.pos{
+	position: absolute;
+	right:26px;
+	top:116px;
+}

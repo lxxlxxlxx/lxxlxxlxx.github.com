@@ -1,0 +1,98 @@
+
+.zwgk{
+	padding:10px;
+	background: #fff;
+}
+
+#directory{
+	float: left;
+	width:204px;
+}
+#directory div li{
+	background: url(../images/zwgk.png)no-repeat;
+	font-size: 16px;
+	padding:0 35px;
+	line-height: 42px;
+	cursor: pointer;
+	text-align: center;
+}
+#directory div li a{
+	color:#006db2;
+}
+
+#directory .directory1 li{
+	background: url(../images/zwgk-back_07.png)no-repeat;
+	line-height: 33px;
+	padding:0 70px;
+}
+#directory .directory1 li:hover{
+	background: url(../images/zwgk4.png)no-repeat;
+}
+#directory .directory1 li a{
+	color:#5e5e5e;
+}
+#directory .on{
+	display: block;
+}
+#directory ol{
+	display: none;
+}
+/* .directory .nothing:hover .directory1{
+	display: block;
+} */
+.details-box{
+	float: right;
+	width:880px;
+	overflow: hidden;
+	border:1px solid #dcdcdc;
+	padding:25px;
+}
+.details{
+	padding-bottom:50px;
+	margin-bottom: 15px;
+}
+.details li{
+/* 	margin:30px;  */
+}
+.details li .time{
+	font-size: 14px;
+	color:#5e5e5e;
+	display: block;
+	line-height: 45px;
+}
+.details li:hover .time{
+	color:#980202;
+}
+.next1{
+	width:277px;
+	float: right;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.next1 .on{
+	width:52px;
+	height: 29px;
+	background: url(../images/tsyq-back.png) no-repeat;
+	text-align: center;line-height: 29px;
+	font-size: 14px;
+	color:#980202;
+	display: block;
+	margin-right: 15px;
+}
+.next1 .on:hover{
+	background: url(../images/tsyq-back1.png) no-repeat;
+}
+.next1 .no{
+	margin-left: 15px;
+}
+.next1 li{
+	float: left;
+	line-height: 29px;
+}
+.next1 .word{
+	color:#474747;
+}
+.next1 .word:hover{
+	color:#980202;
+}
+

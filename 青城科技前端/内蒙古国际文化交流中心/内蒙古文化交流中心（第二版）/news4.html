@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/toper.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/news2.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/toper.js" ></script>
+		<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+	</head>
+	<body onload="time()">
+		<!--头部--><div style="width: 100%; position: fixed; background: white;z-index: 20;text-align: cenetr;top: 0;">
+		<div class="toper">
+			<div class="top_left">
+				<a href="index.html"><img src="img/toper/logo.jpg" /></a>
+				<a class="titer" href="#">世间百态</a>
+			</div>	
+			<div class="col-xs-4 sousuo" style="float: right; ">
+				<div class="input-group">
+					<input type="text" style="border: 2px solid #006833;" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
+       				 	<button class="btn btn-default" style="border: 2px solid #006833;height: 34px;background:#006833 ;color: white;" type="button">搜&nbsp;索</button>
+    				 </span>
+    				 
+				</div>
+				
+			</div>
+			<div class="right_showtime">
+				<img style="float: left;" src="img/toper/time.jpg" />
+				<div id="showtime" style="width: 250px;"></div>
+			</div>
+		</div>
+		</div>
+		<div class="clear"></div>
+		<div class="news_title" style="position: fixed; background: white;z-index: 10;top: 103px;">
+			<div class="title">
+				<ul id="title">
+					<li class="change"><a href="#" style="color: white;">图片</a></li>
+					<li><a href="#md1">视频</a></li>
+					<li><a href="#md2">专题</a></li>
+					<li><a href="#md3">国际战略</a></li>
+					<li><a href="#md4">聚观点</a></li>
+					<div style="float: right;margin-right: 0px;"><a href="index.html"><img style="float: right;"src="img/toper/main.jpg"/></a></div>
+					<div style="margin-right: 40px;"><a href="#"><img style="float: right;" src="img/toper/title1.jpg"/></a></div>
+				</ul>
+				
+				
+			</div>
+			
+		</div>
+		<!--内容-->
+		<div class="content" style="margin-top: 170px;">
+			<div class="content_top">
+				 <!-- Swiper -->
+				    <div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				            <div class="swiper-slide"><img src="img/news2/news01.jpg"/></div>
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination"></div>
+				    </div>
+			</div>
+			<div class="content_cn">
+				<!--图片-->
+				<ul class="content_cn_tit" id="">
+					<li class="picture">图片</li>
+					<li class="picture">|</li>
+					<li class="picture_E">PICTURE</li>
+					<li class="next" style="float: right;"><span>></span></li>
+					<li class="pre" style="float: right;"><span><</span></li>
+				</ul>
+				<ul class="content_cn_picture">
+					<li>
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture1.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">90后“女神老师”晒新照</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture2.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">瑞士邮局将采用无人机投递包裹</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture3.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">韩国举办健美锦标赛</a>
+					</li>
+					<li>
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture4.jpg"id="md1" />
+						</a>
+						<a style="display: block;" href="detail.html">孙祥娇妻晒度假照</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture5.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">“花千骨”赵丽颖包包脸走红</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture6.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">韩国小姐选美大赛落幕</a>
+					</li>
+					
+				</ul>
+				<div class="clear"></div>
+				<!--视频-->
+				<ul class="content_cn_tit" style="margin-top: 20px;">
+					<li class="picture">视频</li>
+					<li class="picture">|</li>
+					<li class="picture_E">VIDEO</li>
+					<li class="next" style="float: right;"><span>></span></li>
+					<li class="pre" style="float: right;"><span><</span></li>
+				</ul>
+				<ul class="content_cn_picture">
+					<li>
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture7.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">34名内地女子在香港卖淫被捕</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture2.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">瑞士邮局将采用无人机投递包裹</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture8.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">南京军区火箭炮西北大漠实弹射击</a>
+					</li>
+					<li>
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture1.jpg" id="md2"/>
+						</a>
+						<a style="display: block;" href="detail.html">90后“女神老师”晒新照</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture9.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">美国波士顿举行狗狗挑战赛</a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture10.jpg"/>
+						</a>
+						<a style="display: block;" href="detail.html">澳巨蟒悬垂树杈半小时吞噬大蝙蝠</a>
+					</li>
+					
+				</ul>
+				<div class="clear"></div>
+				<!--专题-->
+				<ul class="content_cn_tit" style="margin-top: 20px;">
+					<li class="picture">专题</li>
+					<li class="picture">|</li>
+					<li class="picture_E">ZHUANTI</li>
+					<li class="next" style="float: right;"><span>></span></li>
+					<li class="pre" style="float: right;"><span><</span></li>
+				</ul>
+				<ul class="content_cn_picture">
+					<li>
+						<a href="detail.html">
+							<img src="img/news3/1.jpg" style="width: 300px;height: 205px;"  id="md3"/>
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal1.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news3/2.jpg"style="width: 300px;height: 205px;" />
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal2.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news3/3.jpg"style="width: 300px;height: 205px;" />
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal3.jpg" /></a>
+					</li>
+				
+					
+				</ul>
+
+				<!-- 国际战略 -->
+				<ul class="content_cn_tit" style="margin-top: 20px;">
+					<li class="picture">国际战略</li>
+					<li class="picture">|</li>
+					<li class="picture_E">GUOJIZHANLUE</li>
+					<li class="next" style="float: right;"><span>></span></li>
+					<li class="pre" style="float: right;"><span><</span></li>
+				</ul>
+				<ul class="content_cn_picture">
+					<li>
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture11.jpg" id="md4"/>
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal1.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture12.jpg"/>
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal2.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news2/content_cn_picture13.jpg"/>
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal3.jpg" /></a>
+					</li>
+				
+					
+				</ul>
+					
+				<!-- 聚观点 -->
+				<ul class="content_cn_tit" style="margin-top: 20px;">
+					<li class="picture">聚观点</li>
+					<li class="picture">|</li>
+					<li class="picture_E">JUGUANDIAN</li>
+					<li class="next" style="float: right;"><span>></span></li>
+					<li class="pre" style="float: right;"><span><</span></li>
+				</ul>
+				<ul class="content_cn_picture">
+					<li>
+						<a href="detail.html">
+							<img src="img/news3/010.jpg"style="width: 300px;height: 205px;" />
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal1.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news3/011.jpg"style="width: 300px;height: 205px;" />
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal2.jpg" /></a>
+					</li>
+					<li class="pic_midd">
+						<a href="detail.html">
+							<img src="img/news3/001.jpg"style="width: 300px;height: 205px;" />
+						</a>
+						<a href="detail.html"><img style="display: block;" src="img/news2/spectal3.jpg" /></a>
+					</li>
+				
+					
+				</ul>
+				
+
+			</div>
+			<div class="clear"></div>
+		<!--底部	-->		
+		</div>
+			<div class="footer">
+			<div class="footer_top">
+				<ul>
+					<li><a href="#" style="color: #06427a;font-size: 14px;font-weight: bold;">友情链接:</a></li>
+					<li><a href="#">人民网</a></li>
+					<li><a href="#">新华网</a></li>
+					<li><a href="#">中国网</a></li>
+					<li><a href="#">中国日报网</a></li>
+					<li><a href="#">国际在线</a></li>
+					<li><a href="#">CNTV</a></li>
+					<li><a href="#">中青网</a></li>
+					<li><a href="#">中国台湾网</a></li>
+					<li><a href="#">央广网</a></li>
+					<li><a href="#">中国西藏网</a></li>
+					<li><a href="#">中新网</a></li>
+					<li><a href="#">中工网</a></li>
+					<li><a href="#">光明网</a></li>
+					<li><a href="#">百度</a></li>
+					<li><a href="#">新浪</a></li>
+					<li><a href="#">搜狐</a></li>
+					<li><a href="#">凤凰</a></li>
+					<li><a href="#">和讯</a></li>
+					<li><a href="#">腾讯</a></li>
+					<li><a href="#">国搜</a></li>
+					<li><a href="#">好搜</a></li>
+					<li><a href="#">金融界</a></li>
+					<br />
+					<li style="width:63px;height: 13px;"><a href="#"></a></li>
+					<li><a href="#">国家机关</a></li>
+					<li><a href="#">中国网信网</a></li>
+					<li><a href="#">中央纪委</a></li>
+					<li><a href="#">金融机构</a></li>
+					<li><a href="#">重点企业</a></li>
+					<li><a href="#">地方重点网站</a></li>
+					<li><a href="#">四川新闻网</a></li>
+					<li><a href="#">华龙网</a></li>
+					<li><a href="#">东北欧新闻网</a></li>
+					<li><a href="#">大众网</a></li>
+					<li><a href="#">大洋网</a></li>
+					<li><a href="#">齐鲁网</a></li>
+					<li><a href="#">东南网</a></li>
+					<li><a href="#">红网</a></li>
+					<li><a href="#">华声在线</a></li>
+					<li><a href="#">凯风网</a></li>
+					<li><a href="#">更多>></a></li>
+				</ul>
+				
+			</div>
+		
+			
+		</div>
+		<div class="bg">
+			<div class="footer_bottom">
+				<p style="padding-top: 10px;">
+					<a href="#">关于北疆在线</a>
+					<a href="#">-</a>
+					<a href="#">网站大事记</a>
+					<a href="#">-</a>
+					<a href="#" style="color: #663401;">网站诚聘</a>
+					<a href="#">-</a>
+					<a href="#">版权声明</a>
+					<a href="#">-</a>
+					<a href="#">互联网视听节目服务自律公约</a>
+					<a href="#">-</a>
+					<a href="#">广告服务</a>
+					<a href="#">-</a>
+					<a href="#">友情链接</a>
+					<a href="#">-</a>
+					<a href="#">纠错邮箱</a>
+				</p>
+				<p>
+					<a href="#">友情赞助：内蒙古青城网络科技有限公司</a>
+				</p>
+				<p class="footer_bottom_p">
+					<a href="#">北疆在线</a>
+					<a href="#"><img src="img/footer/footer_bottom1.jpg" />版权所有</a>
+					<a href="#">蒙ICP证140554号</a>
+					<a href="#">网络传播视听节目许可证(0107190)</a>
+					<a href="#"><img src="img/footer/footer_bottom2.jpg" />违法和不良信息举报中心</a>
+					<a href="#">举报电话:18510915000</a>
+				</p>
+				<p>
+					<a href="#">蒙公网安备110102000527</a>
+				</p>
+				<p>
+					<a href="#"><img src="img/footer/footer_bottom3.jpg" /></a>
+				</p>
+
+			</div>
+		</div>
+		
+		
+		
+		
+			
+		<script type="text/javascript">
+//		nav導航
+			$("#title li").click(function(){
+				if($(this).className!="change"){
+					$(this).children().css("color","white");
+					$(this).children().css("text-decoration","none");
+					$(this).addClass("change");
+					$(this).siblings().removeClass("change");
+					$(this).siblings().children().css("color","black");
+				}
+			});
+//			swiper
+    		var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 1,
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        loop: true,
+		        continuous: true,
+		        autoplay: 2000,
+		    });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+﻿#faq {
+ font-size: 12px;
+ width: 100%;
+}
+#faq dl {
+ margin: 0;
+ padding:0;
+ display:inline;
+}
+#faq dt {
+ font-weight:bold;
+ cursor:pointer;
+ line-height: 20px;
+
+ border-bottom:1px #ccc dotted;
+ font-size:12pt;
+ color:#333;
+}
+#faq dd {
+	display: none;
+	margin: 0;
+}
+.main1 {width:100%; background:url(djw_bj_20150428.jpg) no-repeat center top; height:330px; margin:0 auto; overflow: hidden;}
+.main_connent {width:1000px; margin:0 auto; padding: 0px 10px 0px 100px;  overflow: hidden;}
+.chanl_name{ height: 28px; line-height: 28px; border-left: 5px solid #07357f; color: #07357f; font-size: 28px; margin-top: 15px;font-weight: bold;text-indent: 0.5em;}
+.chanl_name span{ font-size: 14px; color: #666; font-weight: 400;}
+.main_list{ width: 100%;}
+.main_list li{ height: 60px; line-height: 60px; color: #fff; font-size: 18px; font-weight: bold;width: 330px;float: left;}
+.main_list li a{   color: #C00606;  }
+.main_list li span{ font-size: 14px; color: #666;font-weight: 400;}

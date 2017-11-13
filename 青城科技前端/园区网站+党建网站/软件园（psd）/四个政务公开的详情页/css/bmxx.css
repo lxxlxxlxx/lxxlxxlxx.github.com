@@ -1,0 +1,13 @@
+#directory div li:hover{
+	background: url(../images/zwgk4.png)no-repeat;
+}
+.nothing1 li a{
+	color:#0fa2d5;
+	display: block;
+}
+.details li{
+	border-bottom: 1px solid #fff;
+}
+.details li:hover{
+	border-bottom:1px solid #dcdcdc;
+}

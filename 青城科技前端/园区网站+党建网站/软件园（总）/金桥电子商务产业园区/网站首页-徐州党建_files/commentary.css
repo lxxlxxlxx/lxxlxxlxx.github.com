@@ -1,0 +1,490 @@
+/*评论样式 CSS*/
+#bbs_title {
+	background: url(../网站首页-徐州党建_files/tabtitle.gif) #fff repeat-x top;
+	border: 1px solid #d5d5d5;
+	line-height: 25px;
+	color: #000;
+	font-weight: bold;
+}
+#bbs_title dl {
+	margin: 0px;
+	border: 2px solid #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#bbs_title_right {
+	float: right;
+	font-weight: normal;
+}
+#bbs_center {
+	background: #fff;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	clear: both;
+}
+#bbs_center .clearbox {
+	margin-top: -2px;
+}
+#bbs_left {
+	width: 155px;
+	float: left;
+	text-align: center;
+}
+#bbs_left img {
+	margin-top:10px;
+}
+#bbs_right {
+	padding: 5px;
+	margin-left: 155px;
+	border-left: 1px solid #d5d5d5;
+	height: auto !important;
+	height: 150px;
+	min-height: 186px;
+}
+#bbs_text {
+	padding: 8px;
+	overflow-x: hidden;
+	height: auto !important;
+	height: 150px;
+	min-height: 186px;
+}
+#bbs_text dl, #bbs_text dt, #bbs_text dd {
+	margin: 0px;
+	padding: 0px;
+}
+#bbs_bot {
+	clear: both;
+	background: #fff;
+	border-bottom: 1px solid #d5d5d5;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	line-height: 26px;
+}
+#bbs_botleft {
+	text-align: center;
+	width: 155px;
+	float: left;
+	line-height: 26px;
+}
+* html #bbs_botleft {
+	width: 155px;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+#bbs_botright {
+	margin-left: 155px;
+	border-left: 1px solid #d5d5d5;
+	height: 26px;
+}
+* html #bbs_botright {
+	margin-left: 152px;
+}
+/* 中间线 */
+.bbs_center_line {
+	border-bottom: 1px solid #d5d5d5;
+}
+.bbs_center_right {
+	text-align: right;
+}
+/* 评论虚线 */
+.commontbrokenline {
+	border-top: 1px dashed #d5d5d5;
+	height: 1px;
+	overflow: hidden;
+}
+.compare_tdtop {
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.compare_tdinter {
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	text-align: center;
+}
+.compare_tdbg {
+	background: #deecf7;
+	line-height: 120%;
+}
+.compare_tdbg1 {
+	background: #ffffff;
+	line-height: 120%;
+}
+.compare_title {
+	background: #ebeadb;
+	color: #000;
+	font-weight: normal;
+}
+/* 管理员回复 */
+.Reply {
+	margin:10px 0px;
+	border: 1px solid #DCE8F8;
+	padding: 5px;
+	background: #f4f8fd;
+}
+.Reply dl, .Reply dt, .Reply dd {
+	margin: 0px;
+	padding: 0px;
+}
+.Reply dt {
+	line-height:24px;
+}
+.Reply dd, #bbs_text dd, #bbs_right {
+	line-height:160%;
+	text-indent:20px;
+}
+.Reply dt, .ReplyTime {
+	color: #4887DB;
+}
+.ReplyTime {
+	text-align: right;
+}
+/* ==文章评论样式== */
+.article_PK {
+	background: url(../网站首页-徐州党建_files/article_PK_bg.gif) repeat-y left;
+}
+.article_PK dl, .article_PK dt, .article_PK dd {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.article_PK dt, #bbs_text dt {
+	height: 30px;
+	background: #fff;
+}
+.article_PK dd {
+	line-height: 20px;
+	height: auto !important;
+	height: 120px;
+	min-height: 120px;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+}
+/* 书签式面板tabtitle */
+.PK_title, .PK_mouseover {
+	float: left;
+	width: 114px;
+	font: normal normal bold 13px/25px Arial, "宋体", Helvetica, sans-serif;
+	text-align: center;
+	overflow: hidden;
+}
+.PK_title {
+	cursor: pointer;
+	font-weight: normal;
+	color: #888;
+	background: url(../网站首页-徐州党建_files/tabtitle.gif) #fff repeat-x top;
+	border-left: 1px solid #a8cefc;
+	border-right: 1px solid #a8cefc;
+	border-top: 1px solid #a8cefc;
+	border-bottom: 1px solid #d5d5d5;
+}
+.PK_title dl, .PK_mouseover dl {
+	background: url(../网站首页-徐州党建_files/tabtitle.gif) #fff repeat-x top;
+	border: 2px solid #fff;
+}
+.PK_mouseover {
+	color: #c00;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+}
+#Tab0, #Tab1, #Tab2, #Tab3 {
+	padding: 5px;
+}
+.PK_statement {
+	line-height: 30px;
+	color: #ccc;
+	text-align: right;
+	overflow: hidden;
+	border-bottom: 1px solid #d5d5d5;
+}
+/* 评论记录分页 */
+.PK_page {
+	margin-top: 5px;
+	text-align: center;
+}
+/* 发表评论内容 */
+#indiv {
+	padding: 15px 5px;
+}
+#indiv .PK_indiv_l {
+	width: 300px;
+}
+#indiv .PK_indiv_r {
+	float: right;
+	text-align: center;
+}
+.PK_indiv_l ul {
+	padding-left:10px;
+}
+.PK_indiv_l li {
+	height:24px;
+	line-height:24px;
+	margin-bottom:3px;
+}
+.PK_indiv_l li input {
+	vertical-align:middle;
+}
+.PK_indiv_l li input#guest {
+	margin:0px 3px;
+}
+.post_contant {
+	height:24px;
+	line-height:24px;
+	margin-top:8px;
+}
+.post_contant img {
+	margin:0px 5px;
+}
+/* 评论发表状态 */
+#plstat {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #d5d5d5;
+}
+/* 评论PK快捷短语变色 */
+.pkzone {
+}
+.pkzoneover {
+	cursor :pointer;
+	background: #c00;
+}
+/* 3.0新版 最新评论 相关定义开始*/
+
+/*= 评论列表 =*/
+	.msg_list_box {
+}
+.msg_list_box p, .msg_list_box h3, .msg_list_box h4 {
+	margin:0;
+	padding:0;
+}
+.msg_list_box .hd {
+	height:27px;
+	line-height:27px;
+	overflow:hidden;
+	border-top:1px solid #ddd;
+	padding:0 29px;
+	background:#f8f8f8 url(../网站首页-徐州党建_files/msg_01.png) 8px 9px no-repeat;
+}
+.msg_list_box .hd h3 {
+	font-size:12px;
+	color:#333300;
+	float:left;
+	display:inline;
+	margin-right:1em;
+}
+.msg_list_box .hd p {
+	display:inline;
+	color:#666;
+	float:left;
+}
+.msg_list_box .hd .count {
+	float:right;
+}
+.msg_list_box .hd .count strong {
+	color:#c00;
+}
+.msg_list_box .bd {
+	padding:11px 13px;
+}
+.msg_list_box .bd li {
+	margin-bottom:8px;
+}
+/*== 评论用户信息区 ==*/
+		.msg_list_box .msg_info {
+	position:relative;
+	border-top:1px solid #ddd;
+	height:22px;
+	line-height:22px;
+	background:#f9f9f9;
+	padding:0 16px;
+	color:#333333;
+}
+.msg_list_box .reviewer {
+	color:#000;
+}
+.msg_list_box .star {
+	position:absolute;
+	right:12px;
+	;
+	top:0;
+	height:22px;
+	line-height:22px;
+	padding-top:5px;
+}
+.msg_list_box em {
+	font-style:normal;
+	line-height:22px;
+	height:22px;
+}
+/*== 评论内容 ==*/
+		.msg_list_box .msg_content h4 {
+	height:28px;
+	line-height:28px;
+	color:#005aa0;
+	font-size:12px;
+}
+.msg_list_box .msg_content p {
+	color:#666;
+	line-height:160%;
+	padding:10px 0px;
+}
+.msg_list_box .reply {
+	background:#f4f8fd;
+	border:1px solid #dce8f8;
+	padding:10px;
+	margin:10px 0;
+}
+.msg_list_box .replyer {
+	color:#f90;
+}
+/*== 评论操作区 ==*/
+		.msg_list_box .return {
+	text-align:right;
+	color:#666;
+}
+.msg_list_box .return, .msg_list_box .bd li .return a {
+	color:#666;
+}
+.msg_list_box .return a {
+	margin-right:12px;
+}
+.msg_list_box .return em {
+	padding-left:12px;
+	background:url(../网站首页-徐州党建_files/msg_04.png) 2px 3px no-repeat;
+}
+.msg_list_box .page_box {
+	text-align:center;
+	height:3em;
+	line-height:3em;
+}
+.msg_list_box .page_box a {
+	margin-left:0.5em;
+}
+.msg_replyer_box {
+	margin-top:8px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	zoom:1;
+}
+/*= 发表评论区 =*/
+	.msg_box {
+	margin-top:8px;
+}
+.msg_box .hd {
+	height:27px;
+	line-height:27px;
+}
+/*== 评论者立场 ==*/
+	.msg_box .standpoint {
+	overflow:hidden;
+	zoom:1;
+	height:27px;
+	padding-left:18px;
+	background:url(../网站首页-徐州党建_files/msg_06.png) 0 bottom repeat-x;
+}
+.msg_box .standpoint li {
+	width:116px;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	float:left;
+	background:url(../网站首页-徐州党建_files/msg_08.png) 0 0 no-repeat;
+	margin-right:5px;
+	color:#666;
+}
+.msg_box .standpoint li.current {
+	background:url(../网站首页-徐州党建_files/msg_09.png) 0 0 no-repeat;
+	color:#c00;
+	font-weight:bold;
+	height:27px;
+	line-height:27px;
+}
+/*== 评论者用户信息 ==*/
+	.msg_box .bd {
+	padding:14px;
+}
+.msg_box .user_info {
+	overflow:hidden;
+	margin-bottom:8px;
+	zoom:1;
+}
+.msg_box .user_info li {
+	height:28px;
+	line-height:28px;
+	float:left;
+	width:45%;
+}
+.msg_box .user_info li label {
+	margin-right:0.5em;
+}
+.msg_box .user_info li .input_tx {
+	width:185px;
+	border:1px solid #a8a8a8;
+}
+/*== 评论内容 ==*/
+	.msg_box textarea {
+	font-size:12px;
+	color:#666;
+	width:600px;
+	border:1px solid #A8A8A8;
+	height:120px;
+	display:block;
+	margin:8px 0px;
+}
+/*== 评论操作区 ==*/
+	.msg_replyer_box {
+	margin-top:8px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	zoom:1;
+}
+.msg_replyer_box .reviewer_info {
+	float:left;
+	white-space: nowrap;
+}
+.msg_replyer_box .reviewer_info a {
+	padding-left:24px;
+	margin-right:1em;
+}
+.msg_replyer_box .reviewer_info a.sms {
+	background:url(../网站首页-徐州党建_files/msg_10.png) 0 0 no-repeat;
+}
+.msg_replyer_box .reviewer_info a.mail {
+	background:url(../网站首页-徐州党建_files/msg_11.png) 0 0 no-repeat;
+}
+.msg_replyer_box .return {
+	float:right;
+}
+.msg_replyer_box .return #publish_msg {
+	width:90px;
+	height:25px;
+	line-height:25px;
+	overflow:hidden;
+	border:none;
+	margin-right:0.5em;
+	font-weight:bold;
+}
+.msg_replyer_box .return .bt {
+	background:url(../网站首页-徐州党建_files/msg_05.png) 0 0 no-repeat;
+}
+.msg_replyer_box .return .bt_click {
+	background:url(../网站首页-徐州党建_files/msg_07.png) 0 0 no-repeat;
+}
+.msg_replyer_box .input_check {
+	vertical-align:-2px;
+	margin-left:0.5em;
+}
+/* 3.0新版 最新评论 相关定义结束*/
+.msg_box .bd .user_info {
+	border:none;
+	height:100px;
+	min-height:100px;
+}
+.return img {
+	margin:0px 5px;
+}

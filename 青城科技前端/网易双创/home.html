@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+
+	#body{
+		width:100%;
+		background: url(img/500331045.jpg);
+		background-size: 100% 100%;
+		overflow: hidden;
+	}
+	.top{
+		width:100%;
+		height:15%;
+		background: #ebebed;
+		overflow: hidden;
+	}
+	.logo{
+		margin-top:3%;
+		height:100%;
+		margin:0 auto;
+		display: block;
+	}
+	.logo1{
+		height:80%;
+		margin:0 auto;
+		margin-top:1%;
+		margin-bottom:1%;
+	}
+	.content{
+		width:80%;
+		height:65%;
+		margin:8% auto;
+		margin-bottom:5%;
+		overflow: hidden;
+	}
+	.list{
+		width:23%;
+		height:33%;
+		background: red;
+		float: left;
+		margin-right:2%;
+		margin-bottom:3%;
+		/* line-height: 490%; */
+		text-align: center;
+		font-size: 30px;
+		display: table;
+	}
+	.list a{
+		display: block;
+		text-decoration:none;
+		color:#fff;
+		display:table-cell;
+        vertical-align:middle;
+	}
+	.list a:hover{
+		opacity: 0.7;
+	}
+	.bg1{
+		background: #fe763a;
+	}
+	.bg2{
+		background: #42a5f6;
+	}
+	.bg3{
+		background: #36474f;
+	}
+	.bg4{
+		background: #78909c;
+	}
+	.bg5{
+		background: #66bb6a;
+	}
+	.bg6{
+		background: #91a5ae;
+	}
+	.bg7{
+		background: #b0bfc6;
+	}
+	.bg8{
+		background: #f094eb;
+	}
+
+	</style>
+	<script>
+		window.onload=function(){
+			var oBody = document.getElementById('body');
+			oBody.style.height = document.documentElement.clientHeight+'px';
+		}
+	</script>
+</head>
+<body id="body">
+	<div class="top">
+		<div class="logo1"><img src="img/111_03.png" alt="" class="logo" /></div>
+		
+	</div>
+	
+		<div class="content">
+			<div class="list bg1"><a href="http://www.monilab.com:5506/BSTSTART">双创教学</a></div>
+			<div class="list bg2"><a href="http://study.163.com">云课堂</a></div>
+			<div class="list bg3"><a href="http://biz.163.com/bschool/">园区商学院</a></div>
+			<div class="list bg4"><a href="http://tech.163.com">技术沙龙</a></div>
+			<div class="list bg5"><a href="http://chuangye.163.com">双创资讯</a></div>
+			<div class="list bg6"><a href="https://citc.163yun.com">创业家大赛</a></div>
+			<div class="list bg7"><a href="">项目孵化</a></div>
+			<div class="list bg8"><a href="">E园区</a></div>
+		</div>
+	
+</body>
+</html>

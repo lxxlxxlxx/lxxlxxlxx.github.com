@@ -1,0 +1,32 @@
+/* .nav{
+	background: url(..//网站首页-徐州党建_files/201607261619583298.jpg);
+} */
+.nav a{
+	color:red;
+	/* font-size: 20px; */
+}
+.nav em{
+	color:#000;
+}
+.banner{
+	width:980px;
+	height: 273px;
+	margin:0 auto;
+	background: url(../网站首页-徐州党建_files/banner.png) no-repeat center;
+}
+.lean h3 {
+    height: 34px;
+    line-height: 34px;
+    background: url(../网站首页-徐州党建_files/1areabtbj.jpg) no-repeat left top;
+    font-size: 14px;
+    color: #C01920;
+    position: relative;
+   }
+  .AD_1{
+  	background-size: 100% 100%;
+  }
+
+  .logo img{
+    width:60px;
+    height: 60px;
+  }

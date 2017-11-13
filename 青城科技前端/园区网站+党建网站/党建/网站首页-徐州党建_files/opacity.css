@@ -1,0 +1,63 @@
+#box{
+    margin:100px 0 0 100px;
+}
+#BannerZoneAD_Div4{
+    width:980px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+ #box {
+   width:980px;
+    margin: 0 auto;
+    position: relative;
+}
+#box div {
+    width:980px;
+    height: 180px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    color: #ccc;
+    display: none;
+}
+#box input{
+    display: none;
+}
+#box input.active {
+    background: #f60;
+}
+#box img{
+    width:980px;
+    height: 180px;
+}
+#write{
+    font-size: 29px;
+    font-weight: bold;
+    position: absolute;
+    top:0; 
+    left:0;
+    z-index: 9999;
+    color:yellow;
+    margin-top: 72px;
+    margin-left: 10px;
+   text-shadow:2px 2px 0px red,4px 4px 2px #000;
+   font-family: '微软雅黑';
+}
+.write1{
+    float: left;
+    margin:18px 0px 0px 3px; 
+    font-weight: bold; 
+    color:#fdac14; 
+    font-size:29px; 
+    font-weight: bold; 
+    font-family: '微软雅黑'; 
+    background-image: url(../网站首页-徐州党建_files/20170508120400.png);
+    background-repeat: no-repeat;
+    background-position: 2px -8px;  
+    padding-left: 60px;
+}
+.back{
+    background-color: #d70300;
+}
+

@@ -1,0 +1,194 @@
+.title1{
+	width:100%;
+	height:191px;
+	background: url(../images/dzjs.png) no-repeat center;
+	padding-top: 40px;
+}
+.nav li a{
+	color:#fff;
+	display: block;
+}
+.nav .red-on{
+	background: url(../images/light2.png)no-repeat center;
+	background-size:103% 109%;
+	/* box-shadow: 1px 1px 1px blue; */
+}
+.nav li:hover{
+	background: url(../images/light2.png)no-repeat center;
+	background-size:103% 109%;
+}
+.box-top{
+	padding:10px;
+	border:1px solid #dcdcdc;
+	margin-bottom: 30px;
+}
+#boxL{
+	/* width:551px;
+	height: 303px; */
+	float: left;
+	margin-right: 27px;
+}
+#boxL .box-pic{
+	display: block;
+	position: relative;
+}
+#boxL .box-pos{
+	width:100%;
+	background: #000;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#fff;
+	font-size: 20px;
+	line-height: 40px;
+	padding:0 15px;
+}
+#boxL .box-pos p{
+	float: left;
+}
+#boxL .box-pos i{
+	width:14px;
+	height: 14px;
+	float: left;
+	margin:15px 0 8px 15px;
+	background: #fff;
+}
+#boxL .box-pos .on{	
+	background: #aa1204;	
+}
+#boxR{
+	font-size: 16px;
+	float: left;
+}
+/* .notice1{
+	margin-right: 466px;
+} */
+/* .notice1 a{
+	color:#980202;
+} */
+#boxR p{
+	line-height: 55px;
+}
+#boxR p a:hover{
+	color:#980202;
+}
+.box-center{
+	margin-bottom: 30px;
+}
+.box-center .boxL{
+	padding:13px;
+	border:1px solid #dcdcdc;
+	float: left;
+	margin-right: 30px;
+}
+.box-center .boxC{
+	float: left;
+	padding:10px 30px 10px 10px;
+	border:1px solid #dcdcdc;
+	margin-right: 30px;
+}
+.box-center .boxC .code{
+	font-size: 14px;
+	margin-top: 59px;
+}
+.box-center .boxC .code li{
+	line-height: 35px;
+}
+.box-center .boxC .code li i{
+	width:12px;
+	height: 12px;
+	border:1px solid #dcdcdc;
+	float: left;
+	margin:12px 11px 11px 11px;
+}
+.box-center .boxC .code li i a{
+	float: left;
+}
+.box-center .boxC .code li:hover a{
+	color:#980202;
+}
+.box-center .boxC .code li:hover i{
+	border:1px solid #980202;
+}
+.box-center .boxR {
+	margin-top: 20px;
+	float: left;
+}
+.box-center .boxR img{
+	margin-bottom: 20px;
+	float: left;
+}
+.box-center .boxR .finally{
+	margin-bottom: 0;
+}
+.hot .on{
+	margin-top: 10px;
+}
+.box-bottom{
+	border:1px solid #dcdcdc;
+	padding:5px;
+}
+.box-bottom .boxL{
+	padding:10px;
+	width:773px;
+	float: left;
+}
+.box-bottom .picNew{
+	float: left;
+	width:346px;
+	height: 100px;
+	border:1px solid #fff;
+	padding:5px;
+	margin-right: 30px;
+}
+.box-bottom .picNew:hover{
+	border:1px solid #dcdcdc;
+}
+.box-bottom .picNew:hover h4{
+	color:#980202;
+}
+.box-bottom .picNew img{
+	float: left;
+	margin-right: 10px;
+	width:145px;
+	height: 88px;
+}
+.box-bottom .picNew1{
+	float: left;
+	width:160px;
+}
+.box-bottom .picNew1 span{
+	font-size: 14px;
+	color:#383838;
+	margin-top: 30px;
+	display: block;
+}
+.box-bottom .picNew1 h4{
+	font-size: 14px;
+	color:#383838;
+}
+.box-bottom .picNew1 h4:hover{
+	color:#980202;
+}
+.big{
+	width:384px;
+	float: left;
+}
+.box-bottom .boxR{
+	width:385px;
+	float: left;
+	padding:10px;
+}
+
+.boxR .on{
+	margin-right: 273px;
+}
+.boxR li{
+	line-height: 40px;
+}
+.boxL .new-pic{
+	margin-right: 280px;
+	margin-bottom: 10px;
+}
